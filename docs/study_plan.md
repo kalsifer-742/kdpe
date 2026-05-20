@@ -15,3 +15,4 @@ init
 - How to do evaluation?
 - How to do evaluation without a ground truth?
 - What tools shoul I use?
+- What is BERT, should I use it?
