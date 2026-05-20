@@ -8,12 +8,25 @@ init
 
 ## Baseline/Control condition
 
-## Sample size justification, etc..
+KG extraction without LLMs
 
 ## Evaluation
 
-One idea is to do downstream evaluation. Judge how much the graph is useful for another task.
+|                 | known data     | unknown data   |
+| --------------- | -------------- | -------------- |
+| one-shot prompt | conversational | generalization |
+| conversational  | conversational | generalization |
 
-Judge how the graph answers to the question: who knows who? who has been where and when?
+Done on a small set of hand-labeled triplets
 
-Ground truth is needed. Maybe build the ground truth on a subset of files and hope that the model can generalize on the whole data.
+### Conversational VS one-shot
+
+On "validation" data: compare the resulting graph from a conversation and a one-shot prompt
+
+### Generalization
+
+On test set: compare how the system generalize
+
+### Downstream
+
+person-relation schema
