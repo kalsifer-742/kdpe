@@ -1,10 +1,11 @@
 # Study Design
 
 ## Changelog
-### v0 - 11/05/2026
+### v1 - 21/05/2026
 #### Changes
+expanded document
 #### Comment
-init
+refined evaluation process
 
 ## Baseline/Control condition
 
@@ -12,21 +13,23 @@ KG extraction without LLMs
 
 ## Evaluation
 
+### Downstream
+
+person-relation schema
+
+---
+
+On a small set of hand-labeled triplets
+
 |                 | known data     | unknown data   |
 | --------------- | -------------- | -------------- |
 | one-shot prompt | conversational | generalization |
 | conversational  | conversational | generalization |
 
-Done on a small set of hand-labeled triplets
-
-### Conversational VS one-shot
+#### Conversational VS one-shot
 
 On "validation" data: compare the resulting graph from a conversation and a one-shot prompt
 
-### Generalization
+#### Generalization
 
 On test set: compare how the system generalize
-
-### Downstream
-
-person-relation schema

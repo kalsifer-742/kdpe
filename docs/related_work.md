@@ -1,10 +1,11 @@
 # Related Work
 
 ## Changelog
-### v0 - 11/05/2026
+### v1 - 21/05/2026
 #### Changes
+added relevant papers and technologies
 #### Comment
-init
+research has been done on the topic
 
 ## Papers
 
@@ -18,7 +19,7 @@ init
   - create high quality KG with LLMs without human intervention
   - cons:
     - computationally intensive
-    - biasis and limitations of underlying model
+    - biases and limitations of underlying model
 - Automated Knowledge Graph Construction using Large Language Models
 and Sentence Complexity Modelling
   - https://arxiv.org/pdf/2509.17289v1 
@@ -80,7 +81,7 @@ needed to compare relationship similarity when comparing resulting schemas
 
 ### Logging
 
-Python logging module
+Python logging module + JSON run logger
 
 ### Analysis
 

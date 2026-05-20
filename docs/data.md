@@ -6,8 +6,9 @@ Collection of miscellaneous and court document about the case on Jeffrey Epstein
 
 ## Limitations
 
-TODO:
-Data quality after extracting it from PDF with dedicated software or OCR
+Data quality after extracting it from PDF with dedicated software or OCR has to be evaluated.
+
+Lots of data is redacted, this limits the tools capabilities.
 
 ## Ethics
 
