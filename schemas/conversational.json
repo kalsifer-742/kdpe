@@ -1,0 +1,20 @@
+{
+    "entities": [
+        "Person",
+        "Organization"
+    ],
+    "relationships": [
+        [
+            "communicates_with",
+            "Indicates that a Person received a message from an Organization (e.g., 'jeeproject' communicated with 'Houzz Magazine')."
+        ],
+        [
+            "is_associated_with",
+            "Indicates a Person's connection to an Organization (e.g., 'Jeffrey' is associated with 'Amazon.com')."
+        ],
+        [
+            "is_recipient_of",
+            "Indicates that a Person is the intended recipient of a communication or service (e.g., 'Jodi Harrison' is a recipient of 'housing-authority.org')."
+        ]
+    ]
+}

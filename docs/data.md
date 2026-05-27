@@ -1,5 +1,9 @@
 # Data
 
+TODO: specify version
+https://ddosecrets.org/article/epstein-emails
+TODO: script download and preparation: torrent -> extracts
+
 Unstructured data:
 
 Collection of miscellaneous and court document about the case on Jeffrey Epstein, aka "Epstein Files"

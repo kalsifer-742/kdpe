@@ -1,0 +1,22 @@
+{
+    "oneshot": {
+        "role": "user",
+        "content": "I want to extract a knowledge graph. I'm interested in people, organizations and their connections. Look at the emails and identify entities and relationships."
+    },
+    "conversational": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "I want to extract a knowledge graph representing a social network. I'm interested in people, organizations and their connections. Look at the emails and propose a schema for the knowledge graph.\nEmails:\n{emails}"
+            }
+        ]
+    },
+    "extraction": {
+        "messages": [
+            {
+                "role": "user",
+                "content": "Extract from this email:\n{email}"
+            }
+        ]
+    }
+}
