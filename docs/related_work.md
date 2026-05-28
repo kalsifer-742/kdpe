@@ -1,11 +1,10 @@
 # Related Work
 
 ## Changelog
-### v1 - 21/05/2026
+### v2 - 28/05/2026
 #### Changes
-added relevant papers and technologies
+refined tools choice
 #### Comment
-research has been done on the topic
 
 ## Papers
 
@@ -56,28 +55,24 @@ Enterprise Knowledge Graphs
 
 ### LLM
 
-still to decide depending on what runs on my hardware
+local installation of [gemma4:e4b](https://deepmind.google/models/gemma/gemma-4/) run by [ollama](https://ollama.com/)
 
-#### Natural Language Processing/Relationship extractor
+#### Natural Language Processing
 
 - https://spacy.io/
 
 This represent the baseline method
 
-### Embedding
-
-needed to compare relationship similarity when comparing resulting schemas
+### Entity Resolution
 
 - https://www.sbert.net/
 
-### Database
+### Graph
 
-- https://docs.graphfoundation.org/docs/intro
-    - open and free KG database. Disk storage.
-    - scalable -> overkill
 - https://networkx.org/en/
   - python KG analyzer/explorer
-  - RAM storage
+- https://gephi.org/
+  - graph visualizer
 
 ### Logging
 
@@ -87,6 +82,13 @@ Python logging module + JSON run logger
 
 - numpy
 - matplotlib
+
+### Extra
+
+- [uv](https://docs.astral.sh/uv/)
+  - python package manager
+- [rich](https://github.com/textualize/rich)
+  - pretty terminal formatting
 
 ## Positioning
 

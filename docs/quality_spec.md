@@ -14,7 +14,7 @@ Hand-labeled 100 triplets.
 
 - Iterations N = 5
 - Samples S = 10
-  - samples that the user sees and gives feedback about
+  - samples given to the LLM
 
 ## Metrics
 

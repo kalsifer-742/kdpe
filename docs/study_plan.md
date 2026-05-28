@@ -1,11 +1,11 @@
 # Study Plan
 
 ## Changelog
-### v1 - 21/05/2026
+### v2 - 28/05/2026
 #### Changes
-removed outdated questions, better defined questions
+solved open question
 #### Comment
-ready to start engineering and proceed iteratively
+open question resolved during discussion of the project at lecture
 
 ## Research Questions
 
@@ -13,6 +13,3 @@ ready to start engineering and proceed iteratively
 - Does the schema generalize or overfit the conversation?
 
 ## Open Questions
-
-- LLM as a judge for annotations
-  - how to measure if it does a good job?

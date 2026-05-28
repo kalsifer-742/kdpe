@@ -1,12 +1,28 @@
 # Data
 
-TODO: specify version
-https://ddosecrets.org/article/epstein-emails
-TODO: script download and preparation: torrent -> extracts
-
 Unstructured data:
+Collection of miscellaneous emails coming from Jeffrey Epstein personal email: jeeproject@yahoo.com
 
-Collection of miscellaneous and court document about the case on Jeffrey Epstein, aka "Epstein Files"
+## Provenance
+
+Miscellaneous court document about the case on Jeffrey Epstein, aka "Epstein Files"
+
+Versioned torrent file provided by: https://ddosecrets.org/article/epstein-files
+
+> [!note]
+> [Epstein files 2026-02-11.torrent](https://data.ddosecrets.org//Epstein%20files/Epstein%20files%202026-02-11.torrent)
+
+### Emails
+```
+Epstein Files 2026-02-11
+|-[...]
+|-Jeffrey Epstein
+  |-[...]
+  |-Emails
+    |-jeeproject@yahoo.com
+      |-jeeproject@yahoo.com tranche 1.zip
+
+```
 
 ## Limitations
 
