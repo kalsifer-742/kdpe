@@ -1,0 +1,10 @@
+{
+    "seed": 742,
+    "test_size": 0.3,
+    "model": "gemma4:e4b",
+    "samples": 10,
+    "turns": 5,
+    "dev" : {
+        "data": 0.01
+    }
+}

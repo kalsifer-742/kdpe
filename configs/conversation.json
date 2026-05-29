@@ -1,8 +1,0 @@
-{
-    "seed": 742,
-    "dataset": "validation",
-    "data_percentage": 0.1,
-    "model": "gemma4:e4b",
-    "email_samples": 10,
-    "turns": 5
-}
