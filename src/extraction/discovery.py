@@ -3,12 +3,16 @@ from pathlib import Path
 import random
 import ollama
 from pydantic import BaseModel, Field
-from typing import List, Optional
-import networkx as nx
+from typing import List
 from rich.console import Console
 from rich.table import Table
 
-def print_schema(entities, relationships):
+class Schema(BaseModel):
+    clarifying_question: str = Field(description="If more details are needed to complete the schema, write a question for the user here.")
+    entities: List[str] = Field(description='List of allowed entities, ex: ["Person", "Company", "Project"]')
+    relationships: List[tuple[str, str]] = Field(description='List of allowed relationships withe their description, ex: [("flied_with", "Two people who traveled together, ex: flights or trips"), ("employed_at", "A person who is employed at an organization")]')
+
+def print_schema(console, entities, relationships):
     table = Table(title="Schema", style="cyan")
     table.add_column("Field", justify="left", style="white")
     table.add_column("Value", justify="left", style="green")
@@ -20,8 +24,3 @@ def print_schema(entities, relationships):
         table.add_row(f"  - {rel}", desc)
     
     console.print(table)
-
-class Schema(BaseModel):
-    clarifying_question: str = Field(description="If more details are needed to complete the schema, write a question for the user here.")
-    entities: List[str] = Field(description='List of allowed entities, ex: ["Person", "Company", "Project"]')
-    relationships: List[tuple[str, str]] = Field(description='List of allowed relationships withe their description, ex: [("flied_with", "Two people who traveled together, ex: flights or trips"), ("employed_at", "A person who is employed at an organization")]')

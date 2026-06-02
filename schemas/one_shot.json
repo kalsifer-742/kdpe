@@ -1,0 +1,60 @@
+{
+    "entities": [
+        "Person",
+        "Organization",
+        "Product",
+        "Location",
+        "Event",
+        "Weather",
+        "Order",
+        "Auction",
+        "Email",
+        "Promotion",
+        "Service",
+        "Book",
+        "Music Album",
+        "Glasses"
+    ],
+    "relationships": [
+        [
+            "sent_by",
+            "An email sent by an organization or person"
+        ],
+        [
+            "received_by",
+            "An email received by a person or organization"
+        ],
+        [
+            "contains",
+            "An email contains a promotion, product, or other entity"
+        ],
+        [
+            "located_at",
+            "An organization or event located at a specific place"
+        ],
+        [
+            "participates_in",
+            "A person or organization participating in an event or auction"
+        ],
+        [
+            "purchased_by",
+            "A person who purchased a product or service"
+        ],
+        [
+            "shipped_to",
+            "A product shipped to a person or location"
+        ],
+        [
+            "won_by",
+            "A person who won an auction or promotion"
+        ],
+        [
+            "has_weather",
+            "A location experiencing a specific weather condition"
+        ],
+        [
+            "includes",
+            "An email includes a promotion, product, or other entity"
+        ]
+    ]
+}

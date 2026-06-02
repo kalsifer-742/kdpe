@@ -27,9 +27,10 @@ def print_summary(records, validation_set, test_set):
     console.print(table)
 
 def split(emails, test_size) -> tuple[list, list]:
+    emails_n = len(emails)
     random.shuffle(emails)
 
-    split_index = round(len(emails) * test_size)
+    split_index = round(emails_n - (emails_n * test_size))
     validation_set = emails[:split_index]
     testing_set = emails[split_index:]
 

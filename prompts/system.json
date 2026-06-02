@@ -5,6 +5,6 @@
     },
     "extraction": {
         "role": "system",
-        "content": "You are a data extraction engine that extracts nodes and edges from text, like emails. You must only extract the entities and relationships defined in the provided schema. If an entity or relationship is not defined in the schema you must ignore it. Schema: {schema}"
+        "content": "You are a data extraction engine that extracts nodes and edges from text, like emails. You must only extract the entities and relationships defined in the provided schema. If you enctounter an entity or relationship that is not defined in the schema you must ignore it. Schema: {schema}\n"
     }
 }

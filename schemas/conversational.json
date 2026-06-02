@@ -1,20 +1,37 @@
 {
     "entities": [
         "Person",
-        "Organization"
+        "Organization",
+        "Location",
+        "Event",
+        "Order",
+        "Auction",
+        "Domain"
     ],
     "relationships": [
         [
-            "communicates_with",
-            "Indicates that a Person received a message from an Organization (e.g., 'jeeproject' communicated with 'Houzz Magazine')."
+            "employed_at",
+            "A person employed at an organization"
         ],
         [
-            "is_associated_with",
-            "Indicates a Person's connection to an Organization (e.g., 'Jeffrey' is associated with 'Amazon.com')."
+            "located_at",
+            "An organization or event located at a specific place"
         ],
         [
-            "is_recipient_of",
-            "Indicates that a Person is the intended recipient of a communication or service (e.g., 'Jodi Harrison' is a recipient of 'housing-authority.org')."
+            "participates_in",
+            "A person or organization participating in an event or auction"
+        ],
+        [
+            "purchased_by",
+            "A person who purchased a product or service"
+        ],
+        [
+            "shipped_to",
+            "A product shipped to a person or location"
+        ],
+        [
+            "won_by",
+            "A person who won an auction"
         ]
     ]
 }

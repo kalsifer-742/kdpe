@@ -1,44 +1,31 @@
-import os
-from pathlib import Path
 from mistralai.client import Mistral
 
-
-API_KEY = [...]
-
-client = Mistral(api_key=api_key)
-
 class Agent:
-    def __init__(self, model):
-        self.history = []
+    def __init__(self, api_key, model, temperature, format):
+        self.client = Mistral(api_key)
         self.model = model
+        self.temperature = temperature,
+        self.format = format
+        self.history = []
 
     def get_history(self):
         return self.history
 
+    def set_format(self, format):
+        self.format = format
+
+    #TODO look into mistral API for conversations
     def chat(self, message):
         self.history.append(message)
 
-        chat_response = client.chat.complete(
+        response = self.client.chat.parse(
             model = self.model,
-            messages = [
-                {
-                    "role": "user",
-                    "content": "What is the best French cheese?",
-                },
-            ],
-            response_format=schema.model_json_schema()
-            temperature=0.2
-        )
-
-        response = ollama.chat(
-            model = "gemma4:e4b", #26b is the limit on my machine
             messages = self.history,
-            format = Schema.model_json_schema(),
-            options = {"temperature": 0.2}
+            response_format = self.format,
+            temperature=0
         )
-        self.history.append({"role": "assistant", "content": response['message']['content']})
 
-        schema = json.loads(response['message']['content'])
-        print_schema(schema['entities'], schema['relationships'])
-        
-        console.print(f"[bold cyan]Agent[/bold cyan] >>> {schema['clarifying_question']}")
+        self.history.append({"role": "assistant", "content": response.choices[0].message.content})
+        parsed_response = response.choices[0].message.parsed
+
+        return parsed_response.model_dump()
