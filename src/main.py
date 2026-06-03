@@ -11,9 +11,11 @@ from utils.agent import Agent
 from dotenv import dotenv_values
 from utils import email as email_tools
 from extraction import discovery
-from extraction.discovery import Schema
-from extraction.extracion import GraphData
+import extraction
 import networkx as nx
+import argparse
+import time
+import webbrowser
 
 CONFIG_PATH = Path("config.json")
 RAW_DATA_DIR_PATH = Path("data/raw")
@@ -26,19 +28,24 @@ SYSTEM_PROMPT_PATH = Path("prompts/system.json")
 USER_PROMPT_PATH = Path("prompts/user.json")
 ONE_SHOT_SCHEMA_PATH = Path("schemas/one_shot.json")
 CONVERSATIONAL_SCHEMA_PATH = Path("schemas/conversational.json")
-ONE_SHOT_GRAPH_PATH = Path("graphs/one_shot")
-CONVERSATIONAL_GRAPH_PATH = Path("graphs/conversational")
+ONE_SHOT_GRAPH_PATH = Path("graphs/one_shot.gexf")
+CONVERSATIONAL_GRAPH_PATH = Path("graphs/conversational.gexf")
+LOG_PATH = Path("logs")
 
 if __name__ == "__main__":
     env = dotenv_values(".env")
     api_key = env["MISTRAL_API_KEY"]
     config = json.load(CONFIG_PATH.open("r"))
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--skip-discovery", action="store_true")
+    parser.add_argument("--skip-extraction", action="store_true")
+    args = parser.parse_args()
 
     random.seed(config["seed"])
-    console = Console()
+    console = Console(record=True)
     system_prompt = json.load(SYSTEM_PROMPT_PATH.open("r"))
     user_prompt = json.load(USER_PROMPT_PATH.open("r"))
-    agent = Agent(api_key, config["model"], temperature=config["temperature"], format=Schema)
+    agent = Agent(api_key, config["model"], temperature=config["temperature"], format=discovery.Schema)
     
     emails = []
 
@@ -77,68 +84,75 @@ if __name__ == "__main__":
         for email in tqdm(test_set, desc="Writing test set"):
             f.write(json.dumps(email) + "\n")
 
-    console.print(Panel("[magenta]DISCOVERY"))
+    if not args.skip_discovery:
+        console.print(Panel("[magenta]DISCOVERY"))
 
-    discovery_prompt = system_prompt["discovery"]
-    emails_as_str = []
-    for email in random.sample(validation_set, config["samples"]):
-        emails_as_str.append(email_tools.format_email(email))
-    discovery_prompt["content"] = discovery_prompt["content"].replace("{emails}", "\n---\n".join(emails_as_str))
-    response = agent.chat(discovery_prompt)
+        discovery_prompt = system_prompt["discovery"]
+        emails_as_str = []
+        for email in random.sample(validation_set, config["samples"]):
+            emails_as_str.append(email_tools.format_email(email))
+        discovery_prompt["content"] = discovery_prompt["content"].replace("{emails}", "\n---\n".join(emails_as_str))
+        response = agent.chat(discovery_prompt)
 
-    # Writint One-Shot Schema
-    ONE_SHOT_SCHEMA_PATH.write_text(json.dumps({
-        "entities": response['entities'],
-        "relationships": response['relationships']
-    }, indent=4))
+        # Writint One-Shot Schema
+        ONE_SHOT_SCHEMA_PATH.write_text(json.dumps({
+            "entities": response['entities'],
+            "relationships": response['relationships']
+        }, indent=4))
 
-    discovery.print_schema(console, response['entities'], response['relationships'])
-    console.print(f"[bold cyan]Agent[/bold cyan] >>> {response['clarifying_question']}")
-
-    for turn in range(config["turns"]):
-        user_message = console.input("[bold cyan]User[/bold cyan] >>> ")
-        response = agent.chat({"role": "user", "content": user_message})
         discovery.print_schema(console, response['entities'], response['relationships'])
         console.print(f"[bold cyan]Agent[/bold cyan] >>> {response['clarifying_question']}")
 
-    final_schema = json.loads(agent.get_history()[-1]['content'])
-    CONVERSATIONAL_SCHEMA_PATH.write_text(json.dumps({
-        "entities": final_schema['entities'],
-        "relationships": final_schema['relationships']
-    }, indent=4))
+        for turn in range(config["turns"]):
+            user_message = console.input("[bold cyan]User[/bold cyan] >>> ")
+            response = agent.chat({"role": "user", "content": user_message})
+            discovery.print_schema(console, response['entities'], response['relationships'])
+            console.print(f"[bold cyan]Agent[/bold cyan] >>> {response['clarifying_question']}")
 
-    console.print(Panel("[magenta]EXTRACTION"))
+        final_schema = json.loads(agent.get_history()[-1]['content'])
+        CONVERSATIONAL_SCHEMA_PATH.write_text(json.dumps({
+            "entities": final_schema['entities'],
+            "relationships": final_schema['relationships']
+        }, indent=4))
+    
+    if not args.skip_extraction:
+        console.print(Panel("[magenta]EXTRACTION"))
 
-    agent.set_format(GraphData)
-    one_shot_graph = nx.MultiGraph()
-    conversational_graph = nx.MultiGraph()
-    one_shot_schema = ONE_SHOT_SCHEMA_PATH.read_text()
-    conversational_schema = CONVERSATIONAL_SCHEMA_PATH.read_text()
-    extraction_prompt = system_prompt["extraction"]
+        agent.set_format(extraction.GraphData)
+        one_shot_graph = nx.MultiDiGraph()
+        conversational_graph = nx.MultiDiGraph()
+        one_shot_schema = ONE_SHOT_SCHEMA_PATH.read_text()
+        conversational_schema = CONVERSATIONAL_SCHEMA_PATH.read_text()
+        extraction_prompt = system_prompt["extraction"]
 
-    messages = [
-        extraction_prompt,
-    ]
+        if config["dev"]["enabled"]:
+            emails = emails[:round(len(emails) * config["dev"]["extraction_data"])]
 
-    if config["dev"]["enabled"]:
-        emails = emails[:round(len(emails) * config["dev"]["data"])]
+        console.print(Panel.fit("[cyan]ONE-SHOT"))
+        extraction_prompt["content"] = extraction_prompt["content"].replace("{schema}", one_shot_schema)
+        for email in tqdm(emails, desc="extracing emails", unit="email"):
+            response = agent.chat_batch([extraction_prompt, {"role": "user", "content": email_tools.format_email(email)}])
+            (nodes, edges) = extraction.extract_graph_nx(response)
+            one_shot_graph.add_nodes_from(nodes)
+            for edge in edges:
+                one_shot_graph.add_edge(edge[0], edge[1], label=edge[2])
+        nx.write_gexf(one_shot_graph, ONE_SHOT_GRAPH_PATH)
 
-    console.print(Panel.fit("[cyan]ONE-SHOT"))
-    extraction_prompt["content"] = extraction_prompt["content"].replace("{schema}", one_shot_schema)
-    for email in tqdm(emails, desc="extracing emails", unit="email"):
-        response = agent.chat(messages.append(email_tools.format_email(email)))
-        one_shot_graph.add_nodes_from(response["nodes"])
-        one_shot_graph.add_edges_from(response["edges"])
-    nx.write_gexf(one_shot_graph)
+        console.print(Panel.fit("[cyan]CONVERSATIONAL"))
+        extraction_prompt["content"] = extraction_prompt["content"].replace("{schema}", conversational_schema)
+        for email in tqdm(emails, desc="extracing emails", unit="email"):
+            response = agent.chat_batch([extraction_prompt, {"role": "user", "content": email_tools.format_email(email)}])
+            (nodes, edges) = extraction.extract_graph_nx(response)
+            conversational_graph.add_nodes_from(nodes)
+            for edge in edges:
+                conversational_graph.add_edge(edge[0], edge[1], label=edge[2])
+        nx.write_gexf(conversational_graph, CONVERSATIONAL_GRAPH_PATH)
 
-    console.print(Panel.fit("[cyan]CONVERSATIONAL"))
-    extraction_prompt["content"] = extraction_prompt["content"].replace("{schema}", conversational_schema)
-    for email in tqdm(emails, desc="extracing emails", unit="email"):
-        response = agent.chat(messages.append(email_tools.format_email(email)))
-        conversational_graph.add_nodes_from(response["nodes"])
-        conversational_graph.add_edges_from(response["edges"])
-    nx.write_gexf(conversational_graph)
-
-    console.print(Panel("[magenta]RESOLUTION"))
+        console.print(Panel("[magenta]RESOLUTION"))
 
     console.print(Panel("[magenta]EVALUATION"))
+
+    log = LOG_PATH / f"{time.time()}_{config['seed']}_log.html"
+    console.save_html(path = log)
+    webbrowser.open_new_tab(log)
+    webbrowser.open_new_tab("https://lite.gephi.org")

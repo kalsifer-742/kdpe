@@ -1,10 +1,5 @@
-import json
-from pathlib import Path
-import random
-import ollama
 from pydantic import BaseModel, Field
 from typing import List
-from rich.console import Console
 from rich.table import Table
 
 class Schema(BaseModel):

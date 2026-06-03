@@ -29,3 +29,15 @@ class Agent:
         parsed_response = response.choices[0].message.parsed
 
         return parsed_response.model_dump()
+    
+    def chat_batch(self, messages):
+        response = self.client.chat.parse(
+            model = self.model,
+            messages = messages,
+            response_format = self.format,
+            temperature=0
+        )
+
+        parsed_response = response.choices[0].message.parsed
+
+        return parsed_response.model_dump()

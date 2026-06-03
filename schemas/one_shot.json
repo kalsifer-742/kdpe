@@ -1,60 +1,60 @@
 {
     "entities": [
         "Person",
-        "Organization",
         "Product",
-        "Location",
-        "Event",
-        "Weather",
-        "Order",
-        "Auction",
+        "Organization",
+        "Shipment",
+        "Address",
         "Email",
-        "Promotion",
-        "Service",
-        "Book",
-        "Music Album",
-        "Glasses"
+        "Event",
+        "Trial",
+        "Subscription",
+        "Weather Forecast"
     ],
     "relationships": [
         [
-            "sent_by",
-            "An email sent by an organization or person"
+            "shipped_to",
+            "A 'Shipment' that is sent to an 'Address'"
         ],
         [
-            "received_by",
-            "An email received by a person or organization"
+            "shipped_by",
+            "An 'Organization' that ships a 'Shipment'"
+        ],
+        [
+            "ordered_by",
+            "A 'Person' who places an 'Order'"
         ],
         [
             "contains",
-            "An email contains a promotion, product, or other entity"
+            "A 'Shipment' that contains one or more 'Product'"
+        ],
+        [
+            "subscribed_to",
+            "A 'Person' who subscribes to a 'Subscription'"
+        ],
+        [
+            "trial_for",
+            "A 'Trial' that is associated with a 'Product'"
+        ],
+        [
+            "attended_by",
+            "A 'Person' who attends an 'Event'"
         ],
         [
             "located_at",
-            "An organization or event located at a specific place"
+            "An 'Address' where an 'Organization' or 'Person' is located"
         ],
         [
-            "participates_in",
-            "A person or organization participating in an event or auction"
+            "emailed_by",
+            "An 'Email' that is sent by an 'Organization'"
         ],
         [
-            "purchased_by",
-            "A person who purchased a product or service"
-        ],
-        [
-            "shipped_to",
-            "A product shipped to a person or location"
-        ],
-        [
-            "won_by",
-            "A person who won an auction or promotion"
+            "emailed_to",
+            "An 'Email' that is sent to a 'Person'"
         ],
         [
             "has_weather",
-            "A location experiencing a specific weather condition"
-        ],
-        [
-            "includes",
-            "An email includes a promotion, product, or other entity"
+            "A 'Weather Forecast' that is associated with a location"
         ]
     ]
 }
