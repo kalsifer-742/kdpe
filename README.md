@@ -16,16 +16,24 @@ Conversational Graph Extraction From Unstructured Data
 
 ## Usage
 
+### Sync the virtual environment with the needed packages
 ```shell
 uv sync
 ```
 
+### Download the dataset
 ```shell
 uv run data/download.py
 ```
 
+### Run
 ```shell
 uv run src/main.py
+```
+
+### Look at the statistics
+```shell
+uv run src/evaluation.py
 ```
 
 ## About

@@ -3,8 +3,12 @@
     "test_size": 0.3,
     "model": "mistral-small-2603",
     "temperature": 0.2,
-    "samples": 10,
+    "conversation_samples": 10,
     "turns": 5,
+    "eval_samples": 40,
+    "baseline": {
+        "model": "en_core_web_trf"
+    },
     "embedding": {
         "model": "sentence-transformers/all-MiniLM-L6-v2",
         "similarity_threshold": 0.95

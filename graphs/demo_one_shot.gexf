@@ -1,0 +1,938 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-06-05">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="2" title="evidence" type="string" />
+      <attribute id="3" title="ids" type="string" />
+      <attribute id="4" title="networkx_key" type="long" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="evidence" type="string" />
+      <attribute id="1" title="ids" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Firmoo.com" label="Firmoo.com">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Firmoo.com&quot;, &quot;Firmoo.com&quot;, &quot;Firmoo.com&quot;]" />
+          <attvalue for="1" value="[&quot;391f64d16265&quot;, &quot;67308a86d355&quot;, &quot;5110d5dae90d&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Jeff Epstein" label="Jeff Epstein">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Hi jeff epstein&quot;]" />
+          <attvalue for="1" value="[&quot;391f64d16265&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Complete Eyeglasses" label="Complete Eyeglasses">
+        <attvalues>
+          <attvalue for="0" value="[&quot;$4.99 For Complete Eyeglasses&quot;]" />
+          <attvalue for="1" value="[&quot;391f64d16265&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Eyewear" label="Eyewear">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Eyewear&quot;]" />
+          <attvalue for="1" value="[&quot;391f64d16265&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Women's Eyeglasses" label="Women's Eyeglasses">
+        <attvalues>
+          <attvalue for="0" value="[&quot;WOMEN (http://www.firmoo.com/women-glasses.html?utm_source=email&amp;amp;utm_medium=contentnav&amp;amp;utm_campaign=EP-160509-499-ug-7-A2)&quot;]" />
+          <attvalue for="1" value="[&quot;391f64d16265&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Men's Eyeglasses" label="Men's Eyeglasses">
+        <attvalues>
+          <attvalue for="0" value="[&quot;MEN (http://www.firmoo.com/men-glasses.html?utm_source=email&amp;amp;utm_medium=contentnav&amp;amp;utm_campaign=EP-160509-499-ug-7-A2)&quot;]" />
+          <attvalue for="1" value="[&quot;391f64d16265&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Sunglasses" label="Sunglasses">
+        <attvalues>
+          <attvalue for="0" value="[&quot;SUNGLASSES (http://www.firmoo.com/sunglasses.html?utm_source=email&amp;amp;u&quot;]" />
+          <attvalue for="1" value="[&quot;391f64d16265&quot;]" />
+        </attvalues>
+      </node>
+      <node id="AA Replica" label="AA Replica">
+        <attvalues>
+          <attvalue for="0" value="[&quot;AA Replica&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Louis Vuitton" label="Louis Vuitton">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Louis Vuitton&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Dior" label="Dior">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Dior&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Chanel" label="Chanel">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Chanel&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gucci" label="Gucci">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Gucci&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Hermes" label="Hermes">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Hermes&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gucci Belts" label="Gucci Belts">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Gucci Belts&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Louis Vuitton Bags" label="Louis Vuitton Bags">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Louis Vuitton Bags&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Chanel Bags" label="Chanel Bags">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Chanel Bags&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Gucci Bags" label="Gucci Bags">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Gucci Bags&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Dior Bags" label="Dior Bags">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Dior Bags&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Louis Vuitton Sunglasses" label="Louis Vuitton Sunglasses">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Louis Vuitton Sunglasses&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Louis Vuitton Belts" label="Louis Vuitton Belts">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Louis Vuitton Belts&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Ray-Ban Sunglasses" label="Ray-Ban Sunglasses">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Ray-Ban Sunglasses&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Rolex Watches" label="Rolex Watches">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Rolex Watches&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Suite 505, 214 W 39th Street, NY, NY 10018" label="Suite 505, 214 W 39th Street, NY, NY 10018">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Suite 505, 214 W 39th Street, NY, NY 10018&quot;]" />
+          <attvalue for="1" value="[&quot;67308a86d355&quot;]" />
+        </attvalues>
+      </node>
+      <node id="owluxury.service@gmail.com" label="owluxury.service@gmail.com" />
+      <node id="jeeproject@yahoo.com" label="jeeproject@yahoo.com">
+        <attvalues>
+          <attvalue for="0" value="[&quot;To: jeeproject@yahoo.com&quot;, &quot;To: jeeproject@yahoo.com&quot;, &quot;To: jeeproject@yahoo.com&quot;]" />
+          <attvalue for="1" value="[&quot;d346a95dca44&quot;, &quot;e68a8d93d6e6&quot;, &quot;86e8a023a179&quot;]" />
+        </attvalues>
+      </node>
+      <node id="UnemploymentAssistance.org" label="UnemploymentAssistance.org">
+        <attvalues>
+          <attvalue for="0" value="[&quot;From: \&quot;UnemploymentAssistance.org\&quot; &lt;info@a.unemploymentassistance.org&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;136e75645f6b&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Jodi Harrison" label="Jodi Harrison">
+        <attvalues>
+          <attvalue for="0" value="[&quot;To: jodi harrison &lt;jeeproject@yahoo.com&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;136e75645f6b&quot;]" />
+        </attvalues>
+      </node>
+      <node id="LIHEAP" label="LIHEAP">
+        <attvalues>
+          <attvalue for="0" value="[&quot;LEARN HOW TO APPLY (https://a.unemploymentassistance.org/click.php/e4520196/TYXVhc3Npc3RhbmNlMjAxMjA2LGF1YXNzaXN0YW5jZSxodHRwczovL3d3dy4xcC1hLmNvbS8yOEtMNi9CUDY1OC8/qP3N1YjE9dWFfZW1tX2xwX3V0aWFzc2lzKQ/s34d037b666 for the LIHEAP program to lower utility bills.&quot;]" />
+          <attvalue for="1" value="[&quot;136e75645f6b&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Utility Bills" label="Utility Bills">
+        <attvalues>
+          <attvalue for="0" value="[&quot;for the LIHEAP program to lower utility bills.&quot;]" />
+          <attvalue for="1" value="[&quot;136e75645f6b&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Unemployment Assistance" label="Unemployment Assistance">
+        <attvalues>
+          <attvalue for="0" value="[&quot;This Unemployment Assistance email was intended for Jodi at jeeproject@yahoo.com who registered to our site Unemploymentassistance.org on 11/18/2020&quot;]" />
+          <attvalue for="1" value="[&quot;136e75645f6b&quot;]" />
+        </attvalues>
+      </node>
+      <node id="The Virgin Islands Daily News" label="The Virgin Islands Daily News">
+        <attvalues>
+          <attvalue for="0" value="[&quot;From: The Virgin Islands Daily News &lt;alerts@dailynews.vi&gt;&quot;, &quot;From: The Virgin Islands Daily News &lt;alerts@dailynews.vi&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;d346a95dca44&quot;, &quot;86e8a023a179&quot;]" />
+        </attvalues>
+      </node>
+      <node id="The Daily News E-edition" label="The Daily News E-edition">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Your copy of The Daily News E-edition is ready&quot;, &quot;Your copy of The Daily News E-edition is ready&quot;]" />
+          <attvalue for="1" value="[&quot;d346a95dca44&quot;, &quot;86e8a023a179&quot;]" />
+        </attvalues>
+      </node>
+      <node id="CNBC Morning Squawk" label="CNBC Morning Squawk">
+        <attvalues>
+          <attvalue for="0" value="[&quot;CNBC Morning Squawk &lt;morningsquawk@response.cnbc.com&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;55c74340b9dd&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Dow Jones Industrial Average" label="Dow Jones Industrial Average">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Dow set to rise after Covid restriction fears wiped out Monday's gains&quot;, &quot;Dow drops sharply as two industrial giants warn of trouble&quot;]" />
+          <attvalue for="1" value="[&quot;55c74340b9dd&quot;, &quot;9ad0c2d20e8f&quot;]" />
+        </attvalues>
+      </node>
+      <node id="CNBC" label="CNBC">
+        <attvalues>
+          <attvalue for="0" value="[&quot;CNBC Morning Squawk &lt;morningsquawk@response.cnbc.com&gt;\n&lt;meta data-rh=\&quot;true\&quot; property=\&quot;og:image\&quot; content=\&quot;https://sc.cnbcfm.com/applications/cnbc.com/staticcontent/img/cnbc_logo.gif\&quot;/&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;55c74340b9dd&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Covid-19" label="Covid-19">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Covid restriction fears&quot;]" />
+          <attvalue for="1" value="[&quot;55c74340b9dd&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Amazon.com" label="Amazon.com">
+        <attvalues>
+          <attvalue for="0" value="[&quot;From: \&quot;Amazon.com\&quot; &lt;account-update@amazon.com&gt;&quot;, &quot;From: \&quot;Amazon.com\&quot; &lt;ship-confirm@amazon.com&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;1c068c482e17&quot;, &quot;abf0a9885957&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Amazon verification code" label="Amazon verification code">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Subject: Your Amazon verification code&quot;]" />
+          <attvalue for="1" value="[&quot;1c068c482e17&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Amazon" label="Amazon">
+        <attvalues>
+          <attvalue for="0" value="[&quot;From: \&quot;Amazon.com\&quot; &lt;account-update@amazon.com&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;1c068c482e17&quot;]" />
+        </attvalues>
+      </node>
+      <node id="verification code" label="verification code">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Your Amazon verification code&quot;]" />
+          <attvalue for="1" value="[&quot;1c068c482e17&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Constant Contact" label="Constant Contact">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Constant Contact(R)&quot;]" />
+          <attvalue for="1" value="[&quot;5110d5dae90d&quot;]" />
+        </attvalues>
+      </node>
+      <node id="New York" label="New York">
+        <attvalues>
+          <attvalue for="0" value="[&quot;NY&quot;, &quot;NY&quot;]" />
+          <attvalue for="1" value="[&quot;5110d5dae90d&quot;, &quot;5110d5dae90d&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Suite 505, 214 W 39th Street, New York, NY 10018" label="Suite 505, 214 W 39th Street, New York, NY 10018">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Suite 505, 214 W 39th Street | NY | NY | 10018&quot;]" />
+          <attvalue for="1" value="[&quot;5110d5dae90d&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Black Friday" label="Black Friday">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Black Friday Now&quot;]" />
+          <attvalue for="1" value="[&quot;5110d5dae90d&quot;]" />
+        </attvalues>
+      </node>
+      <node id="The Washington Post" label="The Washington Post">
+        <attvalues>
+          <attvalue for="0" value="[&quot;From: The Washington Post &lt;email@washingtonpost.com&gt;&quot;, &quot;From: The Washington Post &lt;email@washingtonpost.com&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;9ad0c2d20e8f&quot;, &quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Jamal Khashoggi" label="Jamal Khashoggi">
+        <attvalues>
+          <attvalue for="0" value="[&quot;murder of Jamal Khashoggi&quot;]" />
+          <attvalue for="1" value="[&quot;9ad0c2d20e8f&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Turkish President Recep Tayyip Erdoğan" label="Turkish President Recep Tayyip Erdoğan">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Turkish president says murder of Jamal Khashoggi was \u2018planned,\u2019 calls for extradition of Saudi suspects&quot;]" />
+          <attvalue for="1" value="[&quot;9ad0c2d20e8f&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Saudi suspects" label="Saudi suspects">
+        <attvalues>
+          <attvalue for="0" value="[&quot;calls for extradition of Saudi suspects&quot;]" />
+          <attvalue for="1" value="[&quot;9ad0c2d20e8f&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Donald Trump" label="Donald Trump">
+        <attvalues>
+          <attvalue for="0" value="[&quot;\u2018The President . . . says it\u2019s ok to grab women by their private parts\u2019: Man accused of groping woman on flight invokes Trump&quot;, &quot;Trump\u2019s drilling plans&quot;, &quot;what Trump has done&quot;]" />
+          <attvalue for="1" value="[&quot;9ad0c2d20e8f&quot;, &quot;4de3b4d2d515&quot;, &quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Financial_Instrument" label="Financial_Instrument">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Dow drops sharply as two industrial giants warn of trouble&quot;]" />
+          <attvalue for="1" value="[&quot;9ad0c2d20e8f&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Jeffrey Epstein" label="Jeffrey Epstein">
+        <attvalues>
+          <attvalue for="0" value="[&quot;To: Jeffrey Epstein &lt;jeeproject@yahoo.com&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;abf0a9885957&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Memoirs of Hecate County, A..." label="Memoirs of Hecate County, A...">
+        <attvalues>
+          <attvalue for="0" value="[&quot;\&quot;Memoirs of Hecate County, A...\&quot; has shipped.&quot;]" />
+          <attvalue for="1" value="[&quot;abf0a9885957&quot;]" />
+        </attvalues>
+      </node>
+      <node id="9 E 71ST ST" label="9 E 71ST ST">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Shipped to:\n    jeffrey epstein\n    9 E 71ST ST...&quot;]" />
+          <attvalue for="1" value="[&quot;abf0a9885957&quot;]" />
+        </attvalues>
+      </node>
+      <node id="FreeScore360" label="FreeScore360">
+        <attvalues>
+          <attvalue for="0" value="[&quot;FreeScore360&quot;]" />
+          <attvalue for="1" value="[&quot;7d9f54319d11&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Experian" label="Experian">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Experian&quot;]" />
+          <attvalue for="1" value="[&quot;7d9f54319d11&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Equifax" label="Equifax">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Equifax&quot;]" />
+          <attvalue for="1" value="[&quot;7d9f54319d11&quot;]" />
+        </attvalues>
+      </node>
+      <node id="TransUnion" label="TransUnion">
+        <attvalues>
+          <attvalue for="0" value="[&quot;TransUnion&quot;]" />
+          <attvalue for="1" value="[&quot;7d9f54319d11&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Organization: FreeScore360" label="Organization: FreeScore360">
+        <attvalues>
+          <attvalue for="0" value="[&quot;FS360 &lt;info@foranygivenday.com&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;7d9f54319d11&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Person: Jodi Harrison" label="Person: Jodi Harrison">
+        <attvalues>
+          <attvalue for="0" value="[&quot;jodi harrison &lt;jeeproject@yahoo.com&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;7d9f54319d11&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Organization: Experian" label="Organization: Experian" />
+      <node id="Organization: Equifax" label="Organization: Equifax" />
+      <node id="Organization: TransUnion" label="Organization: TransUnion" />
+      <node id="Concierge Auctions" label="Concierge Auctions">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Concierge Auctions &lt;info@conciergeauctions.com&gt;&quot;]" />
+          <attvalue for="1" value="[&quot;e68a8d93d6e6&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Auction Alert" label="Auction Alert">
+        <attvalues>
+          <attvalue for="0" value="[&quot;[Auction Alert\u00ae] 7 Properties. 6 Without Reserve.&quot;]" />
+          <attvalue for="1" value="[&quot;e68a8d93d6e6&quot;]" />
+        </attvalues>
+      </node>
+      <node id="The Greer Farm &amp; Rocky Br" label="The Greer Farm &amp; Rocky Br">
+        <attvalues>
+          <attvalue for="0" value="[&quot;The Greer Farm &amp; Rocky Br&quot;]" />
+          <attvalue for="1" value="[&quot;e68a8d93d6e6&quot;]" />
+        </attvalues>
+      </node>
+      <node id="virginislandsdailynews.com" label="virginislandsdailynews.com">
+        <attvalues>
+          <attvalue for="0" value="[&quot;http://virginislandsdailynews.com/eedition/the-virgin-islands-daily-news/edition_4b7de495-5110-5d4c-8fb9-da06ab264889.html#utm_source=virginislandsdailynews.com&quot;]" />
+          <attvalue for="1" value="[&quot;86e8a023a179&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Mueller team" label="Mueller team">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Mueller team&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Paul Manafort" label="Paul Manafort">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Manafort records&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Republican senator" label="Republican senator">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Republican senator&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="USC" label="USC">
+        <attvalues>
+          <attvalue for="0" value="[&quot;USC was the most frequent target&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Cyclone Idai" label="Cyclone Idai">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Cyclone Idai&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Barack Obama" label="Barack Obama">
+        <attvalues>
+          <attvalue for="0" value="[&quot;I disagreed with Obama&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Myspace" label="Myspace">
+        <attvalues>
+          <attvalue for="0" value="[&quot;old Myspace music&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="NCAA" label="NCAA">
+        <attvalues>
+          <attvalue for="0" value="[&quot;NCAA tournament bracket picks&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Brexit" label="Brexit">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Brexit&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Beto O'Rourke" label="Beto O'Rourke">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Beto&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Joe Biden" label="Joe Biden">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Biden&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+      <node id="Bernie Sanders" label="Bernie Sanders">
+        <attvalues>
+          <attvalue for="0" value="[&quot;Bernie&quot;]" />
+          <attvalue for="1" value="[&quot;4de3b4d2d515&quot;]" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Firmoo.com" target="Jeff Epstein" id="0" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: &quot;Firmoo.com&quot; &lt;service@firmoo.com&gt;&#10;To: jeeproject@yahoo.com&#10;Subject: $4.99 For Complete Eyeglasses|May New Arrivals Just Added&#10;Hi jeff epstein" />
+          <attvalue for="3" value="391f64d16265" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Jeff Epstein" id="1" label="received_by">
+        <attvalues>
+          <attvalue for="2" value="From: &quot;Firmoo.com&quot; &lt;service@firmoo.com&gt;&#10;To: jeeproject@yahoo.com&#10;Subject: $4.99 For Complete Eyeglasses|May New Arrivals Just Added&#10;Hi jeff epstein" />
+          <attvalue for="3" value="391f64d16265" />
+          <attvalue for="4" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Complete Eyeglasses" id="2" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Subject: $4.99 For Complete Eyeglasses|May New Arrivals Just Added" />
+          <attvalue for="3" value="391f64d16265" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Eyewear" id="3" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Check Our Latest Offer &amp; Eyewear" />
+          <attvalue for="3" value="391f64d16265" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Women's Eyeglasses" id="4" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="WOMEN (http://www.firmoo.com/women-glasses.html?utm_source=email&amp;amp;utm_medium=contentnav&amp;amp;utm_campaign=EP-160509-499-ug-7-A2)" />
+          <attvalue for="3" value="391f64d16265" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Men's Eyeglasses" id="5" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="MEN (http://www.firmoo.com/men-glasses.html?utm_source=email&amp;amp;utm_medium=contentnav&amp;amp;utm_campaign=EP-160509-499-ug-7-A2)" />
+          <attvalue for="3" value="391f64d16265" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Sunglasses" id="6" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="SUNGLASSES (http://www.firmoo.com/sunglasses.html?utm_source=email&amp;amp;u" />
+          <attvalue for="3" value="391f64d16265" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Suite 505, 214 W 39th Street, NY, NY 10018" id="7" label="located_at">
+        <attvalues>
+          <attvalue for="2" value="Firmoo.com | Suite 505, 214 W 39th Street, NY, NY 10018" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Gucci Belts" id="8" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Gucci Belts - $145 Shop Gucci Belts" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Louis Vuitton Bags" id="9" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Louis Vuitton Bags - $225 Shop Louis Vuitton Bags" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Chanel Bags" id="10" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Chanel Bags - $225 Shop Chanel Bags" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Gucci Bags" id="11" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Gucci Bags - $225 Shop Gucci Bags" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Dior Bags" id="12" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Dior Bags - $240 Shop Dior Bags" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Louis Vuitton Sunglasses" id="13" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Shop Louis Vuitton Sunglasses" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Louis Vuitton Belts" id="14" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Shop Louis Vuitton Belts" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Ray-Ban Sunglasses" id="15" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Shop Ray-Ban Sunglasses" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Rolex Watches" id="16" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Shop Rolex Watches" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="jeeproject@yahoo.com" id="17" label="received_by">
+        <attvalues>
+          <attvalue for="2" value="To: jeeproject@yahoo.com" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Constant Contact" id="18" label="associated_with">
+        <attvalues>
+          <attvalue for="2" value="Online Marketing by Constant Contact(R)" />
+          <attvalue for="3" value="5110d5dae90d" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="New York" id="19" label="located_at">
+        <attvalues>
+          <attvalue for="2" value="Suite 505, 214 W 39th Street | NY | NY | 10018" />
+          <attvalue for="3" value="5110d5dae90d" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Firmoo.com" target="Black Friday" id="20" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Free Glasses for 72 Hours | Black Friday Now" />
+          <attvalue for="3" value="5110d5dae90d" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="owluxury.service@gmail.com" target="Firmoo.com" id="21" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: &quot;Firmoo.com&amp;aareplica&quot; &lt;owluxury.service@gmail.com&gt;" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="owluxury.service@gmail.com" target="jeeproject@yahoo.com" id="22" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: &quot;Firmoo.com&amp;aareplica&quot; &lt;owluxury.service@gmail.com&gt;&#10;To: jeeproject@yahoo.com" />
+          <attvalue for="3" value="67308a86d355" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="UnemploymentAssistance.org" target="Jodi Harrison" id="23" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: &quot;UnemploymentAssistance.org&quot; &lt;info@a.unemploymentassistance.org&gt;&#10;To: jodi harrison &lt;jeeproject@yahoo.com&gt;" />
+          <attvalue for="3" value="136e75645f6b" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="UnemploymentAssistance.org" target="LIHEAP" id="24" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="LEARN HOW TO APPLY (https://a.unemploymentassistance.org/click.php/e4520196/TYXVhc3Npc3RhbmNlMjAxMjA2LGF1YXNzaXN0YW5jZSxodHRwczovL3d3dy4xcC1hLmNvbS8yOEtMNi9CUDY1OC8/qP3N1YjE9dWFfZW1tX2xwX3V0aWFzc2lzKQ/s34d037b666 for the LIHEAP program to lower utility bills." />
+          <attvalue for="3" value="136e75645f6b" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="UnemploymentAssistance.org" target="Unemployment Assistance" id="25" label="associated_with">
+        <attvalues>
+          <attvalue for="2" value="This Unemployment Assistance email was intended for Jodi at jeeproject@yahoo.com who registered to our site Unemploymentassistance.org on 11/18/2020" />
+          <attvalue for="3" value="136e75645f6b" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="LIHEAP" target="Utility Bills" id="26" label="belongs_to_category">
+        <attvalues>
+          <attvalue for="2" value="for the LIHEAP program to lower utility bills." />
+          <attvalue for="3" value="136e75645f6b" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Virgin Islands Daily News" target="jeeproject@yahoo.com" id="27" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: The Virgin Islands Daily News &lt;alerts@dailynews.vi&gt;&#10;To: jeeproject@yahoo.com" />
+          <attvalue for="3" value="d346a95dca44" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Virgin Islands Daily News" target="jeeproject@yahoo.com" id="28" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: The Virgin Islands Daily News &lt;alerts@dailynews.vi&gt;&#10;To: jeeproject@yahoo.com" />
+          <attvalue for="3" value="86e8a023a179" />
+          <attvalue for="4" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="The Virgin Islands Daily News" target="The Daily News E-edition" id="29" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Your copy of The Daily News E-edition is ready" />
+          <attvalue for="3" value="d346a95dca44" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Virgin Islands Daily News" target="The Daily News E-edition" id="30" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Your copy of The Daily News E-edition is ready" />
+          <attvalue for="3" value="86e8a023a179" />
+          <attvalue for="4" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="The Daily News E-edition" target="virginislandsdailynews.com" id="31" label="located_at">
+        <attvalues>
+          <attvalue for="2" value="http://virginislandsdailynews.com/eedition/the-virgin-islands-daily-news/edition_4b7de495-5110-5d4c-8fb9-da06ab264889.html#utm_source=virginislandsdailynews.com" />
+          <attvalue for="3" value="86e8a023a179" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="CNBC Morning Squawk" target="CNBC" id="32" label="belongs_to_category">
+        <attvalues>
+          <attvalue for="2" value="CNBC Morning Squawk &lt;morningsquawk@response.cnbc.com&gt;&#10;&lt;meta data-rh=&quot;true&quot; property=&quot;og:image&quot; content=&quot;https://sc.cnbcfm.com/applications/cnbc.com/staticcontent/img/cnbc_logo.gif&quot;/&gt;" />
+          <attvalue for="3" value="55c74340b9dd" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="CNBC Morning Squawk" target="jeeproject@yahoo.com" id="33" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: CNBC Morning Squawk &lt;morningsquawk@response.cnbc.com&gt;&#10;To: jeeproject@yahoo.com" />
+          <attvalue for="3" value="55c74340b9dd" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="CNBC Morning Squawk" target="Dow Jones Industrial Average" id="34" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="What to watch today: Dow set to rise after Covid restriction fears wiped out Monday's gains" />
+          <attvalue for="3" value="55c74340b9dd" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="CNBC Morning Squawk" target="Covid-19" id="35" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="What to watch today: Dow set to rise after Covid restriction fears wiped out Monday's gains" />
+          <attvalue for="3" value="55c74340b9dd" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Amazon.com" target="Amazon verification code" id="36" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Subject: Your Amazon verification code" />
+          <attvalue for="3" value="1c068c482e17" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Amazon.com" target="verification code" id="37" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Subject: Your Amazon verification code" />
+          <attvalue for="3" value="1c068c482e17" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Amazon.com" target="Amazon" id="38" label="associated_with">
+        <attvalues>
+          <attvalue for="2" value="From: &quot;Amazon.com&quot; &lt;account-update@amazon.com&gt;" />
+          <attvalue for="3" value="1c068c482e17" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Amazon.com" target="Jeffrey Epstein" id="39" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: &quot;Amazon.com&quot; &lt;ship-confirm@amazon.com&gt;&#10;To: Jeffrey Epstein &lt;jeeproject@yahoo.com&gt;" />
+          <attvalue for="3" value="abf0a9885957" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Amazon.com" target="Memoirs of Hecate County, A..." id="40" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="&quot;Memoirs of Hecate County, A...&quot; has shipped." />
+          <attvalue for="3" value="abf0a9885957" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Jamal Khashoggi" id="41" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="The Post Most from The Washington Post&#10;&#10;Dow drops sharply as two industrial giants warn of trouble; Some white Northerners want to redefine a flag rooted in racism as a symbol of patriotism; ‘The President . . . says it’s ok to grab women by their private parts’: Man accused of groping woman on flight invokes Trump" />
+          <attvalue for="3" value="9ad0c2d20e8f" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Turkish President Recep Tayyip Erdoğan" id="42" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Turkish president says murder of Jamal Khashoggi was ‘planned,’ calls for extradition of Saudi suspects" />
+          <attvalue for="3" value="9ad0c2d20e8f" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Saudi suspects" id="43" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Turkish president says murder of Jamal Khashoggi was ‘planned,’ calls for extradition of Saudi suspects" />
+          <attvalue for="3" value="9ad0c2d20e8f" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Donald Trump" id="44" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="‘The President . . . says it’s ok to grab women by their private parts’: Man accused of groping woman on flight invokes Trump" />
+          <attvalue for="3" value="9ad0c2d20e8f" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Donald Trump" id="45" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Federal judge casts doubt on Trump’s drilling plans across the U.S. because they ignore climate change" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Dow Jones Industrial Average" id="46" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Dow drops sharply as two industrial giants warn of trouble" />
+          <attvalue for="3" value="9ad0c2d20e8f" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Financial_Instrument" id="47" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Dow drops sharply as two industrial giants warn of trouble" />
+          <attvalue for="3" value="9ad0c2d20e8f" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="USC" id="48" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="A Trojan horse: USC was the most frequent target in alleged admissions scheme" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Cyclone Idai" id="49" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Cyclone Idai could be the Southern Hemisphere’s deadliest storm" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Barack Obama" id="50" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="I disagreed with Obama. But what Trump has done makes those differences insignificant." />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Myspace" id="51" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="What the huge loss of old Myspace music means for Internet culture" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="NCAA" id="52" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="NCAA tournament bracket picks from college basketball’s top experts" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Brexit" id="53" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="The 400-year-old legal precedent that might break Brexit" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Beto O'Rourke" id="54" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Beto, Biden and Bernie: The B-Boys and the media’s dangerous, self-fulfilling prophecy" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Joe Biden" id="55" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Beto, Biden and Bernie: The B-Boys and the media’s dangerous, self-fulfilling prophecy" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Bernie Sanders" id="56" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Beto, Biden and Bernie: The B-Boys and the media’s dangerous, self-fulfilling prophecy" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Jeffrey Epstein" target="Memoirs of Hecate County, A..." id="57" label="participates_in">
+        <attvalues>
+          <attvalue for="2" value="&quot;Memoirs of Hecate County, A...&quot; has shipped." />
+          <attvalue for="3" value="abf0a9885957" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Organization: FreeScore360" target="Person: Jodi Harrison" id="58" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: FS360 &lt;info@foranygivenday.com&gt;&#10;To: jodi harrison &lt;jeeproject@yahoo.com&gt;" />
+          <attvalue for="3" value="7d9f54319d11" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Organization: FreeScore360" target="Organization: Experian" id="59" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="View your 3 credit ratings with Experian Equifax and Transunion today with 7-day trial" />
+          <attvalue for="3" value="7d9f54319d11" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Organization: FreeScore360" target="Organization: Equifax" id="60" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="View your 3 credit ratings with Experian Equifax and Transunion today with 7-day trial" />
+          <attvalue for="3" value="7d9f54319d11" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Organization: FreeScore360" target="Organization: TransUnion" id="61" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="View your 3 credit ratings with Experian Equifax and Transunion today with 7-day trial" />
+          <attvalue for="3" value="7d9f54319d11" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Concierge Auctions" target="Auction Alert" id="62" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="[Auction Alert®] 7 Properties. 6 Without Reserve." />
+          <attvalue for="3" value="e68a8d93d6e6" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Concierge Auctions" target="jeeproject@yahoo.com" id="63" label="sent_by">
+        <attvalues>
+          <attvalue for="2" value="From: Concierge Auctions &lt;info@conciergeauctions.com&gt;&#10;To: jeeproject@yahoo.com" />
+          <attvalue for="3" value="e68a8d93d6e6" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Concierge Auctions" target="The Greer Farm &amp; Rocky Br" id="64" label="promotes">
+        <attvalues>
+          <attvalue for="2" value="Never Before Offered For Sale | Selling Separately or Collectively&#10;The Greer Farm &amp; Rocky Br" />
+          <attvalue for="3" value="e68a8d93d6e6" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Mueller team" target="Paul Manafort" id="65" label="associated_with">
+        <attvalues>
+          <attvalue for="2" value="request to open Manafort records" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Republican senator" target="Donald Trump" id="66" label="associated_with">
+        <attvalues>
+          <attvalue for="2" value="‘The McCain family deserves better,’ Republican senator says as Trump continues to lash out" />
+          <attvalue for="3" value="4de3b4d2d515" />
+          <attvalue for="4" value="0" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

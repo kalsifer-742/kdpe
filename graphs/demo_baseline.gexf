@@ -1,0 +1,933 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2026-06-05">
+    <creator>NetworkX 3.6.1</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes mode="static" class="edge">
+      <attribute id="1" title="networkx_key" type="long" />
+    </attributes>
+    <attributes mode="static" class="node">
+      <attribute id="0" title="evidence" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Louis Vuitton" label="Louis Vuitton">
+        <attvalues>
+          <attvalue for="0" value="Louis Vuitton" />
+        </attvalues>
+      </node>
+      <node id="Dior" label="Dior">
+        <attvalues>
+          <attvalue for="0" value="Dior" />
+        </attvalues>
+      </node>
+      <node id="Chanel" label="Chanel">
+        <attvalues>
+          <attvalue for="0" value="Chanel" />
+        </attvalues>
+      </node>
+      <node id="Gucci" label="Gucci">
+        <attvalues>
+          <attvalue for="0" value="Gucci" />
+        </attvalues>
+      </node>
+      <node id="Hermes" label="Hermes">
+        <attvalues>
+          <attvalue for="0" value="Hermes" />
+        </attvalues>
+      </node>
+      <node id="AA Replica" label="AA Replica">
+        <attvalues>
+          <attvalue for="0" value="AA Replica" />
+        </attvalues>
+      </node>
+      <node id="Ray-Ban" label="Ray-Ban">
+        <attvalues>
+          <attvalue for="0" value="Ray-Ban" />
+        </attvalues>
+      </node>
+      <node id="Rolex Watches" label="Rolex Watches">
+        <attvalues>
+          <attvalue for="0" value="Rolex Watches" />
+        </attvalues>
+      </node>
+      <node id="145" label="145">
+        <attvalues>
+          <attvalue for="0" value="145" />
+        </attvalues>
+      </node>
+      <node id="Louis Vuitton Bags" label="Louis Vuitton Bags">
+        <attvalues>
+          <attvalue for="0" value="Louis Vuitton Bags" />
+        </attvalues>
+      </node>
+      <node id="225" label="225">
+        <attvalues>
+          <attvalue for="0" value="225" />
+        </attvalues>
+      </node>
+      <node id="240" label="240">
+        <attvalues>
+          <attvalue for="0" value="240" />
+        </attvalues>
+      </node>
+      <node id="Jodi" label="Jodi">
+        <attvalues>
+          <attvalue for="0" value="Jodi" />
+        </attvalues>
+      </node>
+      <node id="11/18/2020&#10;&#10;ATTENTION SUBSCRIBERS:" label="11/18/2020&#10;&#10;ATTENTION SUBSCRIBERS:">
+        <attvalues>
+          <attvalue for="0" value="11/18/2020&#10;&#10;ATTENTION SUBSCRIBERS:" />
+        </attvalues>
+      </node>
+      <node id="LIHEAP" label="LIHEAP">
+        <attvalues>
+          <attvalue for="0" value="LIHEAP" />
+        </attvalues>
+      </node>
+      <node id="Friday, January 8" label="Friday, January 8">
+        <attvalues>
+          <attvalue for="0" value="Friday, January 8" />
+        </attvalues>
+      </node>
+      <node id="jeffrey epstein" label="jeffrey epstein">
+        <attvalues>
+          <attvalue for="0" value="jeffrey epstein" />
+        </attvalues>
+      </node>
+      <node id="17.96" label="17.96">
+        <attvalues>
+          <attvalue for="0" value="17.96" />
+        </attvalues>
+      </node>
+      <node id="The Washington Post" label="The Washington Post">
+        <attvalues>
+          <attvalue for="0" value="The Washington Post" />
+        </attvalues>
+      </node>
+      <node id="Mueller" label="Mueller">
+        <attvalues>
+          <attvalue for="0" value="Mueller" />
+        </attvalues>
+      </node>
+      <node id="April 1" label="April 1">
+        <attvalues>
+          <attvalue for="0" value="April 1" />
+        </attvalues>
+      </node>
+      <node id="Manafort" label="Manafort">
+        <attvalues>
+          <attvalue for="0" value="Manafort" />
+        </attvalues>
+      </node>
+      <node id="spring" label="spring">
+        <attvalues>
+          <attvalue for="0" value="spring" />
+        </attvalues>
+      </node>
+      <node id="Wednesday" label="Wednesday">
+        <attvalues>
+          <attvalue for="0" value="Wednesday" />
+        </attvalues>
+      </node>
+      <node id="evening" label="evening">
+        <attvalues>
+          <attvalue for="0" value="evening" />
+        </attvalues>
+      </node>
+      <node id="McCain" label="McCain">
+        <attvalues>
+          <attvalue for="0" value="McCain" />
+        </attvalues>
+      </node>
+      <node id="Trump" label="Trump">
+        <attvalues>
+          <attvalue for="0" value="Trump" />
+        </attvalues>
+      </node>
+      <node id="USC" label="USC">
+        <attvalues>
+          <attvalue for="0" value="USC" />
+        </attvalues>
+      </node>
+      <node id="Cyclone Idai" label="Cyclone Idai">
+        <attvalues>
+          <attvalue for="0" value="Cyclone Idai" />
+        </attvalues>
+      </node>
+      <node id="the Southern Hemisphere’s" label="the Southern Hemisphere’s">
+        <attvalues>
+          <attvalue for="0" value="the Southern Hemisphere’s" />
+        </attvalues>
+      </node>
+      <node id="Obama" label="Obama">
+        <attvalues>
+          <attvalue for="0" value="Obama" />
+        </attvalues>
+      </node>
+      <node id="Myspace" label="Myspace">
+        <attvalues>
+          <attvalue for="0" value="Myspace" />
+        </attvalues>
+      </node>
+      <node id="Midwest" label="Midwest">
+        <attvalues>
+          <attvalue for="0" value="Midwest" />
+        </attvalues>
+      </node>
+      <node id="NCAA" label="NCAA">
+        <attvalues>
+          <attvalue for="0" value="NCAA" />
+        </attvalues>
+      </node>
+      <node id="400-year-old" label="400-year-old">
+        <attvalues>
+          <attvalue for="0" value="400-year-old" />
+        </attvalues>
+      </node>
+      <node id="Beto" label="Beto">
+        <attvalues>
+          <attvalue for="0" value="Beto" />
+        </attvalues>
+      </node>
+      <node id="Biden" label="Biden">
+        <attvalues>
+          <attvalue for="0" value="Biden" />
+        </attvalues>
+      </node>
+      <node id="Bernie" label="Bernie">
+        <attvalues>
+          <attvalue for="0" value="Bernie" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge source="Louis Vuitton" target="Dior" id="0" label="buy">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton" target="Chanel" id="1" label="buy">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton" target="Gucci" id="2" label="buy">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton" target="Hermes" id="3" label="buy">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton" target="AA Replica" id="4" label="buy">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="AA Replica" id="5" label="buy">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="Dior" id="6" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="Louis Vuitton" id="7" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="Louis Vuitton" id="8" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="Louis Vuitton" id="9" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="Louis Vuitton" id="10" label="use">
+        <attvalues>
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="Ray-Ban" id="11" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="Ray-Ban" id="12" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="Rolex Watches" id="13" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Dior" target="Rolex Watches" id="14" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="AA Replica" id="15" label="buy">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Dior" id="16" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Dior" id="17" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Louis Vuitton" id="18" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Louis Vuitton" id="19" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Louis Vuitton" id="20" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Louis Vuitton" id="21" label="use">
+        <attvalues>
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Ray-Ban" id="22" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Ray-Ban" id="23" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Rolex Watches" id="24" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Chanel" target="Rolex Watches" id="25" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="AA Replica" id="26" label="buy">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Dior" id="27" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Dior" id="28" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Dior" id="29" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Dior" id="30" label="use">
+        <attvalues>
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Louis Vuitton" id="31" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Louis Vuitton" id="32" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Louis Vuitton" id="33" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Louis Vuitton" id="34" label="use">
+        <attvalues>
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Louis Vuitton" id="35" label="use">
+        <attvalues>
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Louis Vuitton" id="36" label="use">
+        <attvalues>
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Louis Vuitton" id="37" label="use">
+        <attvalues>
+          <attvalue for="1" value="6" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Louis Vuitton" id="38" label="use">
+        <attvalues>
+          <attvalue for="1" value="7" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Ray-Ban" id="39" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Ray-Ban" id="40" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Ray-Ban" id="41" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Ray-Ban" id="42" label="use">
+        <attvalues>
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Rolex Watches" id="43" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Rolex Watches" id="44" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Rolex Watches" id="45" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Gucci" target="Rolex Watches" id="46" label="use">
+        <attvalues>
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Hermes" target="AA Replica" id="47" label="buy">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="145" target="Dior" id="48" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="145" target="Louis Vuitton" id="49" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="145" target="Louis Vuitton" id="50" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="145" target="Ray-Ban" id="51" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="145" target="Rolex Watches" id="52" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Dior" id="53" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Dior" id="54" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Louis Vuitton" id="55" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Louis Vuitton" id="56" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Louis Vuitton" id="57" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Louis Vuitton" id="58" label="use">
+        <attvalues>
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Ray-Ban" id="59" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Ray-Ban" id="60" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Rolex Watches" id="61" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Rolex Watches" id="62" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="Louis Vuitton Bags" target="Chanel" id="63" label="shop">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Dior" id="64" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Dior" id="65" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Dior" id="66" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Louis Vuitton" id="67" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Louis Vuitton" id="68" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Louis Vuitton" id="69" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Louis Vuitton" id="70" label="use">
+        <attvalues>
+          <attvalue for="1" value="3" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Louis Vuitton" id="71" label="use">
+        <attvalues>
+          <attvalue for="1" value="4" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Louis Vuitton" id="72" label="use">
+        <attvalues>
+          <attvalue for="1" value="5" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Ray-Ban" id="73" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Ray-Ban" id="74" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Ray-Ban" id="75" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Rolex Watches" id="76" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Rolex Watches" id="77" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="225" target="Rolex Watches" id="78" label="use">
+        <attvalues>
+          <attvalue for="1" value="2" />
+        </attvalues>
+      </edge>
+      <edge source="240" target="Dior" id="79" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="240" target="Louis Vuitton" id="80" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="240" target="Louis Vuitton" id="81" label="use">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="240" target="Ray-Ban" id="82" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="240" target="Rolex Watches" id="83" label="use">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Jodi" target="11/18/2020&#10;&#10;ATTENTION SUBSCRIBERS:" id="84" label="intend">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Jodi" target="LIHEAP" id="85" label="intend">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="11/18/2020&#10;&#10;ATTENTION SUBSCRIBERS:" target="LIHEAP" id="86" label="learn">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Friday, January 8" target="jeffrey epstein" id="87" label="track">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Friday, January 8" target="17.96" id="88" label="track">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Friday, January 8" target="17.96" id="89" label="track">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="jeffrey epstein" target="17.96" id="90" label="ship">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="jeffrey epstein" target="17.96" id="91" label="ship">
+        <attvalues>
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Mueller" id="92" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="April 1" id="93" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Manafort" id="94" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="spring" id="95" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="Wednesday" id="96" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="The Washington Post" target="evening" id="97" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Mueller" target="April 1" id="98" label="cite">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Mueller" target="Manafort" id="99" label="cite">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Mueller" target="spring" id="100" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Mueller" target="Wednesday" id="101" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Mueller" target="evening" id="102" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="April 1" target="Manafort" id="103" label="seek">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="April 1" target="spring" id="104" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="April 1" target="Wednesday" id="105" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="April 1" target="evening" id="106" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Manafort" target="spring" id="107" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Manafort" target="Wednesday" id="108" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Manafort" target="evening" id="109" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="spring" target="Wednesday" id="110" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="spring" target="evening" id="111" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Wednesday" target="evening" id="112" label="arrive">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="McCain" target="Trump" id="113" label="say">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Trump" target="Myspace" id="114" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Trump" target="Midwest" id="115" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Trump" target="NCAA" id="116" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Trump" target="400-year-old" id="117" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Trump" target="Beto" id="118" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Trump" target="Biden" id="119" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Trump" target="Bernie" id="120" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="USC" target="Cyclone Idai" id="121" label="disagree">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="USC" target="the Southern Hemisphere’s" id="122" label="disagree">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="USC" target="Obama" id="123" label="disagree">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Cyclone Idai" target="Obama" id="124" label="disagree">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="the Southern Hemisphere’s" target="Obama" id="125" label="disagree">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Myspace" target="Midwest" id="126" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Myspace" target="NCAA" id="127" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Myspace" target="400-year-old" id="128" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Myspace" target="Beto" id="129" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Myspace" target="Biden" id="130" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Myspace" target="Bernie" id="131" label="make">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Midwest" target="NCAA" id="132" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Midwest" target="400-year-old" id="133" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Midwest" target="Beto" id="134" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Midwest" target="Biden" id="135" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Midwest" target="Bernie" id="136" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="NCAA" target="Beto" id="137" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="NCAA" target="Biden" id="138" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="NCAA" target="Bernie" id="139" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="400-year-old" target="Beto" id="140" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="400-year-old" target="Biden" id="141" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="400-year-old" target="Bernie" id="142" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Beto" target="Biden" id="143" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+      <edge source="Beto" target="Bernie" id="144" label="show">
+        <attvalues>
+          <attvalue for="1" value="0" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>

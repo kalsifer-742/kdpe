@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.r1 {color: #800080; text-decoration-color: #800080}
+.r2 {font-weight: bold}
+.r3 {color: #008000; text-decoration-color: #008000}
+.r4 {color: #008080; text-decoration-color: #008080; font-weight: bold}
+.r5 {color: #00ff00; text-decoration-color: #00ff00; font-style: italic}
+.r6 {font-style: italic}
+.r7 {color: #008080; text-decoration-color: #008080}
+.r8 {color: #c0c0c0; text-decoration-color: #c0c0c0}
+.r9 {color: #808000; text-decoration-color: #808000}
+body {
+    color: #000000;
+    background-color: #ffffff;
+}
+</style>
+</head>
+<body>
+    <pre style="font-family:Menlo,'DejaVu Sans Mono',consolas,'Courier New',monospace"><code style="font-family:inherit">╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">TAG</span> : demo                                                                                                           │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">CONFIGURATION</span>                                                                                                        │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+<span class="r2">{</span>
+    <span class="r3">&#x27;seed&#x27;</span>: <span class="r4">742</span>,
+    <span class="r3">&#x27;test_size&#x27;</span>: <span class="r4">0.3</span>,
+    <span class="r3">&#x27;model&#x27;</span>: <span class="r3">&#x27;mistral-small-2603&#x27;</span>,
+    <span class="r3">&#x27;temperature&#x27;</span>: <span class="r4">0.2</span>,
+    <span class="r3">&#x27;conversation_samples&#x27;</span>: <span class="r4">10</span>,
+    <span class="r3">&#x27;turns&#x27;</span>: <span class="r4">5</span>,
+    <span class="r3">&#x27;eval_samples&#x27;</span>: <span class="r4">40</span>,
+    <span class="r3">&#x27;baseline&#x27;</span>: <span class="r2">{</span><span class="r3">&#x27;model&#x27;</span>: <span class="r3">&#x27;en_core_web_trf&#x27;</span><span class="r2">}</span>,
+    <span class="r3">&#x27;embedding&#x27;</span>: <span class="r2">{</span><span class="r3">&#x27;model&#x27;</span>: <span class="r3">&#x27;sentence-transformers/all-MiniLM-L6-v2&#x27;</span>, <span class="r3">&#x27;similarity_threshold&#x27;</span>: <span class="r4">0.95</span><span class="r2">}</span>,
+    <span class="r3">&#x27;dev&#x27;</span>: <span class="r2">{</span><span class="r3">&#x27;enabled&#x27;</span>: <span class="r5">True</span>, <span class="r3">&#x27;data&#x27;</span>: <span class="r4">0.01</span>, <span class="r3">&#x27;extraction_data&#x27;</span>: <span class="r4">0.1</span><span class="r2">}</span>
+<span class="r2">}</span>
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">INGESTING</span>                                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+<span class="r6">                   Ingestion Metrics                   </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Metric                       </span><span class="r7">┃</span><span class="r2">   Value </span><span class="r7">┃</span><span class="r2"> Percentage </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Emails Successfully Ingested </span><span class="r7">│</span><span class="r3">     130 </span><span class="r7">│</span><span class="r9">     100.0% </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Non-empty Bodies             </span><span class="r7">│</span><span class="r3">     129 </span><span class="r7">│</span><span class="r9">      99.2% </span><span class="r7">│</span>
+<span class="r7">├──────────────────────────────┼─────────┼────────────┤</span>
+<span class="r7">│</span><span class="r8"> Min Body Length              </span><span class="r7">│</span><span class="r3">       0 </span><span class="r7">│</span><span class="r9">      chars </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Max Body Length              </span><span class="r7">│</span><span class="r3"> 107,473 </span><span class="r7">│</span><span class="r9">      chars </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Avg Body Length              </span><span class="r7">│</span><span class="r3"> 13865.0 </span><span class="r7">│</span><span class="r9">      chars </span><span class="r7">│</span>
+<span class="r7">└──────────────────────────────┴─────────┴────────────┘</span>
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">SPLITTING</span>                                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Splitting the data<span class="r9">...</span>
+<span class="r6">             Split Metrics             </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Info           </span><span class="r7">┃</span><span class="r2"> Value </span><span class="r7">┃</span><span class="r2"> Percentage </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Validation set </span><span class="r7">│</span><span class="r3">    91 </span><span class="r7">│</span><span class="r9">      70.0% </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Testing set    </span><span class="r7">│</span><span class="r3">    39 </span><span class="r7">│</span><span class="r9">      30.0% </span><span class="r7">│</span>
+<span class="r7">└────────────────┴───────┴────────────┘</span>
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">EXTRACTION</span>                                                                                                           │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+╭──────────╮
+│ <span class="r7">BASELINE</span> │
+╰──────────╯
+╭──────────╮
+│ <span class="r7">ONE-SHOT</span> │
+╰──────────╯
+╭────────────────╮
+│ <span class="r7">CONVERSATIONAL</span> │
+╰────────────────╯
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">RESOLUTION</span>                                                                                                           │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+<span class="r6">                Resolution Metrics                 </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Metric                        </span><span class="r7">┃</span><span class="r2"> Value </span><span class="r7">┃</span><span class="r2"> Reduced </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Initial Nodes Number          </span><span class="r7">│</span><span class="r3">    77 </span><span class="r7">│</span><span class="r9">         </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> After Resolution Nodes Number </span><span class="r7">│</span><span class="r3">    77 </span><span class="r7">│</span><span class="r9">    0.0% </span><span class="r7">│</span>
+<span class="r7">└───────────────────────────────┴───────┴─────────┘</span>
+<span class="r6">                Resolution Metrics                 </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Metric                        </span><span class="r7">┃</span><span class="r2"> Value </span><span class="r7">┃</span><span class="r2"> Reduced </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Initial Nodes Number          </span><span class="r7">│</span><span class="r3">    79 </span><span class="r7">│</span><span class="r9">         </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> After Resolution Nodes Number </span><span class="r7">│</span><span class="r3">    79 </span><span class="r7">│</span><span class="r9">    0.0% </span><span class="r7">│</span>
+<span class="r7">└───────────────────────────────┴───────┴─────────┘</span>
+</code></pre>
+</body>
+</html>

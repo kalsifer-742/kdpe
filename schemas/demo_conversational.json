@@ -1,0 +1,37 @@
+{
+    "entities": [
+        "Organization",
+        "Person",
+        "Product",
+        "Event",
+        "Location",
+        "Auction",
+        "Financial_Instrument"
+    ],
+    "relationships": [
+        [
+            "promotes",
+            "An organization or person promoting a product or event"
+        ],
+        [
+            "located_at",
+            "A location where an event, organization, product, or auction is based"
+        ],
+        [
+            "participates_in",
+            "A person or organization taking part in an event or auction"
+        ],
+        [
+            "belongs_to_category",
+            "A product categorized under a specific type"
+        ],
+        [
+            "associated_with",
+            "A financial instrument associated with an auction"
+        ],
+        [
+            "hosts",
+            "An organization hosting an auction"
+        ]
+    ]
+}

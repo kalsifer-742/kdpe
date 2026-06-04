@@ -1,10 +1,11 @@
+import hashlib
 from pathlib import Path
 import email
 from email import policy
-from rich.console import Console
 from rich.table import Table
+from utils import console, log_and_print
 
-def print_summary(console: Console, emails, files_n):
+def print_summary(emails, files_n):
     ingested_n = len(emails)
     non_empty_bodies_n = sum(1 for eml in emails if len(eml["content"]) >= 1)
     body_lengths = [len(eml["content"]) for eml in emails]
@@ -24,7 +25,7 @@ def print_summary(console: Console, emails, files_n):
     table.add_row("Max Body Length", f"{max_len:,}", "chars")
     table.add_row("Avg Body Length", f"{avg_len:.1f}", "chars")
 
-    console.print(table)
+    log_and_print(table)
 
 def parse_eml(path: Path):
     with open(path, "rb") as f: #open read in binary format
@@ -34,7 +35,7 @@ def parse_eml(path: Path):
     email_content = email_body.get_content()
     
     return {
-        #TODO add id
+        "id": hashlib.md5((path.as_posix()).encode()).hexdigest()[:12],
         "subject": email_object["subject"],
         "from": email_object["from"],
         "to": email_object["to"],

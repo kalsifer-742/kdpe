@@ -1,0 +1,43 @@
+{
+    "entities": [
+        "Organization",
+        "Person",
+        "Product",
+        "Event",
+        "Location",
+        "Promotion",
+        "Survey",
+        "Auction",
+        "Financial_Instrument"
+    ],
+    "relationships": [
+        [
+            "sent_by",
+            "An email sent by an organization or person"
+        ],
+        [
+            "received_by",
+            "An email received by a person or organization"
+        ],
+        [
+            "promotes",
+            "An organization or person promoting a product, event, or promotion"
+        ],
+        [
+            "located_at",
+            "A location where an event, organization, or product is based"
+        ],
+        [
+            "participates_in",
+            "A person or organization taking part in an event or promotion"
+        ],
+        [
+            "belongs_to_category",
+            "A product or promotion categorized under a specific type"
+        ],
+        [
+            "associated_with",
+            "A financial instrument associated with a promotion or event"
+        ]
+    ]
+}

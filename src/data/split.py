@@ -6,6 +6,8 @@ from rich import print
 from rich.table import Table
 from rich.console import Console
 
+from utils import log_and_print
+
 SEED = 742
 TEST_SIZE = 0.3
 VALIDATION_SIZE = 1 - TEST_SIZE
@@ -24,7 +26,7 @@ def print_summary(records, validation_set, test_set):
     table.add_row("Validation set", f"{validation_set_len}", f"{validation_set_len/records_n*100:.1f}%")
     table.add_row("Testing set", f"{test_set_len}", f"{test_set_len/records_n*100:.1f}%")
 
-    console.print(table)
+    log_and_print(table)
 
 def split(emails, test_size) -> tuple[list, list]:
     emails_n = len(emails)

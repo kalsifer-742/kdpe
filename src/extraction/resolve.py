@@ -1,11 +1,11 @@
 from networkx import MultiDiGraph
 import networkx as nx
-from rich.console import Console
 from sentence_transformers import SentenceTransformer
 from rich.table import Table
 from tqdm import tqdm
+from utils import log_and_print
 
-def print_summary(console: Console, initial_nodes_n, resolved_nodes_n):
+def print_summary(initial_nodes_n, resolved_nodes_n):
     table = Table(title="Resolution Metrics", style="cyan")
     table.add_column("Metric", justify="left", style="white")
     table.add_column("Value", justify="right", style="green")
@@ -14,7 +14,7 @@ def print_summary(console: Console, initial_nodes_n, resolved_nodes_n):
     table.add_row("Initial Nodes Number", f"{initial_nodes_n}", "")
     table.add_row("After Resolution Nodes Number", f"{resolved_nodes_n}", f"{(initial_nodes_n - resolved_nodes_n)/initial_nodes_n*100:.1f}%")
 
-    console.print(table)
+    log_and_print(table)
 
 def resolve_graph(graph: MultiDiGraph, model_name, threshold):
     model = SentenceTransformer(model_name)
@@ -31,16 +31,16 @@ def resolve_graph(graph: MultiDiGraph, model_name, threshold):
             if similarity >= threshold:
                 similarity_graph.add_edge(nodes[i], nodes[j])
 
+    # possible improvement: greedy_modularity_communities()
     connected_components = list(nx.connected_components(similarity_graph))
     
     for component in tqdm(connected_components, desc="resolving graph", unit="component"):    
         if len(component) == 1: #skipping isolated nodes
             continue
 
-        # heuristic: longest as canonical name
         canonical_node = max(component, key=lambda n: graph.degree(n))
 
-        for node in tqdm(component, desc="resolving component", unit="node", position=1, leave=False):
+        for node in tqdm(component, desc="resolving component", unit="node", position=4):
             if node == canonical_node:
                 continue
 
