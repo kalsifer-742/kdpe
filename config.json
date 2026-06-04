@@ -5,6 +5,10 @@
     "temperature": 0.2,
     "samples": 10,
     "turns": 5,
+    "embedding": {
+        "model": "sentence-transformers/all-MiniLM-L6-v2",
+        "similarity_threshold": 0.95
+    },
     "dev" : {
         "enabled": true,
         "data": 0.01,

@@ -21,8 +21,8 @@ def print_summary(records, validation_set, test_set):
     table.add_column("Value", justify="right", style="green")
     table.add_column("Percentage", justify="right", style="yellow")
 
-    table.add_row("Validation set", str(validation_set_len), f"{validation_set_len/records_n*100:.1f}%")
-    table.add_row("Testing set", str(test_set_len), f"{test_set_len/records_n*100:.1f}%")
+    table.add_row("Validation set", f"{validation_set_len}", f"{validation_set_len/records_n*100:.1f}%")
+    table.add_row("Testing set", f"{test_set_len}", f"{test_set_len/records_n*100:.1f}%")
 
     console.print(table)
 

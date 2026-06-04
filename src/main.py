@@ -9,8 +9,8 @@ from data import split
 from tqdm import tqdm
 from utils.agent import Agent
 from dotenv import dotenv_values
-from utils import email as email_tools
 from extraction import discovery
+from extraction import resolve
 import extraction
 import networkx as nx
 import argparse
@@ -119,8 +119,6 @@ if __name__ == "__main__":
         console.print(Panel("[magenta]EXTRACTION"))
 
         agent.set_format(extraction.GraphData)
-        one_shot_graph = nx.MultiDiGraph()
-        conversational_graph = nx.MultiDiGraph()
         one_shot_schema = ONE_SHOT_SCHEMA_PATH.read_text()
         conversational_schema = CONVERSATIONAL_SCHEMA_PATH.read_text()
         extraction_prompt = system_prompt["extraction"]
@@ -130,29 +128,25 @@ if __name__ == "__main__":
 
         console.print(Panel.fit("[cyan]ONE-SHOT"))
         extraction_prompt["content"] = extraction_prompt["content"].replace("{schema}", one_shot_schema)
-        for email in tqdm(emails, desc="extracing emails", unit="email"):
-            response = agent.chat_batch([extraction_prompt, {"role": "user", "content": email_tools.format_email(email)}])
-            (nodes, edges) = extraction.extract_graph_nx(response)
-            one_shot_graph.add_nodes_from(nodes)
-            for edge in edges:
-                one_shot_graph.add_edge(edge[0], edge[1], label=edge[2])
-        nx.write_gexf(one_shot_graph, ONE_SHOT_GRAPH_PATH)
+        one_shot_graph = extraction.extract_graph(emails, agent, extraction_prompt)
 
         console.print(Panel.fit("[cyan]CONVERSATIONAL"))
         extraction_prompt["content"] = extraction_prompt["content"].replace("{schema}", conversational_schema)
-        for email in tqdm(emails, desc="extracing emails", unit="email"):
-            response = agent.chat_batch([extraction_prompt, {"role": "user", "content": email_tools.format_email(email)}])
-            (nodes, edges) = extraction.extract_graph_nx(response)
-            conversational_graph.add_nodes_from(nodes)
-            for edge in edges:
-                conversational_graph.add_edge(edge[0], edge[1], label=edge[2])
-        nx.write_gexf(conversational_graph, CONVERSATIONAL_GRAPH_PATH)
+        conversational_graph = extraction.extract_graph(emails, agent, extraction_prompt)
 
         console.print(Panel("[magenta]RESOLUTION"))
+
+        resolved_one_shot_graph = resolve.resolve_graph(one_shot_graph, config["embedding"]["model"], config["embedding"]["similarity_threshold"])
+        resolve.print_summary(console, one_shot_graph.number_of_nodes(), resolved_one_shot_graph.number_of_nodes())
+        nx.write_gexf(resolved_one_shot_graph, ONE_SHOT_GRAPH_PATH)
+
+        resolved_conversational_graph = resolve.resolve_graph(conversational_graph, config["embedding"]["model"], config["embedding"]["similarity_threshold"])
+        resolve.print_summary(console, conversational_graph.number_of_nodes(), resolved_conversational_graph.number_of_nodes())
+        nx.write_gexf(resolved_conversational_graph, CONVERSATIONAL_GRAPH_PATH)
 
     console.print(Panel("[magenta]EVALUATION"))
 
     log = LOG_PATH / f"{time.time()}_{config['seed']}_log.html"
     console.save_html(path = log)
-    webbrowser.open_new_tab(log)
+    webbrowser.open_new_tab(log.as_uri())
     webbrowser.open_new_tab("https://lite.gephi.org")

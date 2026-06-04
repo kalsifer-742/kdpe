@@ -34,6 +34,7 @@ def parse_eml(path: Path):
     email_content = email_body.get_content()
     
     return {
+        #TODO add id
         "subject": email_object["subject"],
         "from": email_object["from"],
         "to": email_object["to"],
