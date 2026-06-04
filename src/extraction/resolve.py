@@ -31,18 +31,28 @@ def resolve_graph(graph: MultiDiGraph, model_name, threshold):
             if similarity >= threshold:
                 similarity_graph.add_edge(nodes[i], nodes[j])
 
-    connected_components = nx.connected_components(similarity_graph)
+    connected_components = list(nx.connected_components(similarity_graph))
     
-    for component in tqdm(connected_components, desc="resolving graph", unit="component"):        
+    for component in tqdm(connected_components, desc="resolving graph", unit="component"):    
+        if len(component) == 1: #skipping isolated nodes
+            continue
+
         # heuristic: longest as canonical name
-        canonical_node = max(list(component), key=len)
+        canonical_node = max(component, key=lambda n: graph.degree(n))
 
         for node in tqdm(component, desc="resolving component", unit="node", position=1, leave=False):
-            if node != canonical_node:
-                for u, v, data in graph.in_edges(node, data=True):
+            if node == canonical_node:
+                continue
+
+            in_edges = list(graph.in_edges(node, data=True))
+            out_edges = list(graph.out_edges(node, data=True))
+
+            for u, _, data in in_edges:
+                if u != node: #skipping self-loops
                     graph.add_edge(u, canonical_node, **data)
-                for u, v, data in graph.out_edges(node, data=True):
+            for _, v, data in out_edges:
+                if v != node: #skipping self-loops
                     graph.add_edge(canonical_node, v, **data)
-                graph.remove_node(node)
+            graph.remove_node(node)
 
     return graph

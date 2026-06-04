@@ -9,7 +9,7 @@
         "model": "sentence-transformers/all-MiniLM-L6-v2",
         "similarity_threshold": 0.95
     },
-    "dev" : {
+    "dev": {
         "enabled": true,
         "data": 0.01,
         "extraction_data": 0.1

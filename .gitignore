@@ -1,6 +1,9 @@
-data/*
-logs/*
+data/raw/*
+data/processed/*
+data/sets/*
+schemas/*
 graphs/*
+logs/*
 **/__pycache__/**
 .env
 .venv
