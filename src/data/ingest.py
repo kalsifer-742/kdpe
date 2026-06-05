@@ -35,7 +35,7 @@ def parse_eml(path: Path):
     email_content = email_body.get_content()
     
     return {
-        "id": hashlib.md5((path.as_posix()).encode()).hexdigest()[:12],
+        "id": path.name[:12], # id previously(during download) set at start of the file name
         "subject": email_object["subject"],
         "from": email_object["from"],
         "to": email_object["to"],

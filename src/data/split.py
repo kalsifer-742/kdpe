@@ -1,7 +1,6 @@
 from pathlib import Path
 import random
 import json
-from tqdm import tqdm
 from rich import print
 from rich.table import Table
 from rich.console import Console
@@ -37,23 +36,3 @@ def split(emails, test_size) -> tuple[list, list]:
     testing_set = emails[split_index:]
 
     return validation_set, testing_set
-
-# if __name__ == "__main__":
-    # output_path = Path("data/splits")
-    # output_path.mkdir(exist_ok=True)
-
-    # with open("data/processed/emails.json", "r") as f:
-    #         lines = f.readlines()
-    #         records = [json.loads(line) for line in lines]
-
-    # validation_set, testing_set = split(records)
-
-    # with open(output_path / "validation.json", "w") as f:
-    #     for record in tqdm(validation_set, desc="Writing validation set"):
-    #         f.write(json.dumps(record) + "\n")
-
-    # with open(output_path / "test.json", "w") as f:
-    #     for record in tqdm(testing_set, desc="Writing test set"):
-    #         f.write(json.dumps(record) + "\n")
-
-    # print_summary(records, validation_set, testing_set)

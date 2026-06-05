@@ -1,17 +1,16 @@
-from utils import debug
 import json
 from pathlib import Path
 import random
 import rich
 from rich.console import Console
 from rich.panel import Panel
+from tqdm import tqdm
 from data import ingest
 from data import process
 from data import split
-from tqdm import tqdm
 from utils.agent import Agent
 from dotenv import load_dotenv
-from extraction import baseline, discovery, sanitize_for_gexf
+from extraction import baseline, discovery
 from extraction import resolve
 from utils import create_tag, email as email_tools, log_and_input, log_and_print, save_log
 import extraction
@@ -70,8 +69,8 @@ if __name__ == "__main__":
 
     files_paths = list(RAW_DATA_DIR_PATH.iterdir()) #[...] does not what i want
     if config["dev"]["enabled"]:
-        files_paths = files_paths[:round(len(files_paths) * config["dev"]["data"])]
-    for file_path in tqdm(files_paths, desc="Ingesting emails", unit="file"):
+        files_paths = random.sample(files_paths, round(len(files_paths) * config["dev"]["data"]))
+    for file_path in tqdm(files_paths, desc="Ingesting emails", unit="email"):
         email = ingest.parse(file_path)
         if email:
             emails.append(email)
@@ -93,11 +92,11 @@ if __name__ == "__main__":
     split.print_summary(emails, validation_set, test_set)
 
     with open(VALIDATION_SET_PATH, "w") as f:
-        for email in tqdm(validation_set, desc="Writing validation set"):
+        for email in tqdm(validation_set, desc="Writing validation set", unit="email"):
             f.write(json.dumps(email) + "\n")
 
     with open(TEST_SET_PATH, "w") as f:
-        for email in tqdm(test_set, desc="Writing test set"):
+        for email in tqdm(test_set, desc="Writing test set", unit="email"):
             f.write(json.dumps(email) + "\n")
 
     if not args.skip_discovery:
@@ -105,7 +104,7 @@ if __name__ == "__main__":
 
         discovery_prompt = system_prompt["discovery"]
         emails_as_str = []
-        for email in random.sample(validation_set, config["conversation_samples"]):
+        for email in random.sample(validation_set, round(len(validation_set) * config["conversation_samples"])):
             emails_as_str.append(email_tools.format_email(email))
         discovery_prompt["content"] = discovery_prompt["content"].replace("{emails}", "\n---\n".join(emails_as_str))
         response = agent.chat(discovery_prompt)
@@ -143,34 +142,34 @@ if __name__ == "__main__":
         prompt = extraction_template
 
         if config["dev"]["enabled"]:
-            emails = emails[:round(len(emails) * config["dev"]["extraction_data"])]
+            emails = random.sample(emails, round(len(emails) * config["dev"]["extraction_data"]))
 
         log_and_print(Panel.fit("[cyan]BASELINE"))
-        baseline_graph = baseline.extract_graph(nlp,emails)
-        nx.write_gexf(sanitize_for_gexf(baseline_graph), GRAPH_PATH / f"{run_tag}_baseline.gexf")
+        baseline_graph = baseline.extract_graph(nlp, emails)
+        nx.write_gexf(extraction.sanitize_for_gexf(baseline_graph), GRAPH_PATH / f"{run_tag}_baseline.gexf")
 
         log_and_print(Panel.fit("[cyan]ONE-SHOT"))
         prompt["content"] = extraction_template["content"].replace("{schema}", one_shot_schema)
         one_shot_graph = extraction.extract_graph(emails, agent, prompt)
-        nx.write_gexf(sanitize_for_gexf(one_shot_graph), GRAPH_PATH / f"{run_tag}_one_shot.gexf")
+        nx.write_gexf(extraction.sanitize_for_gexf(one_shot_graph), GRAPH_PATH / f"{run_tag}_one_shot.gexf")
 
         log_and_print(Panel.fit("[cyan]CONVERSATIONAL"))
         prompt["content"] = extraction_template["content"].replace("{schema}", conversational_schema)
         conversational_graph = extraction.extract_graph(emails, agent, prompt)
-        nx.write_gexf(sanitize_for_gexf(conversational_graph), GRAPH_PATH / f"{run_tag}_conversational.gexf")
+        nx.write_gexf(extraction.sanitize_for_gexf(conversational_graph), GRAPH_PATH / f"{run_tag}_conversational.gexf")
 
         log_and_print(Panel("[magenta]RESOLUTION"))
 
         resolved_baseline_graph = resolve.resolve_graph(baseline_graph, config["embedding"]["model"], config["embedding"]["similarity_threshold"])
-        nx.write_gexf(sanitize_for_gexf(resolved_baseline_graph), GRAPH_PATH / f"{run_tag}_resolved_baseline.gexf")
+        nx.write_gexf(extraction.sanitize_for_gexf(resolved_baseline_graph), GRAPH_PATH / f"{run_tag}_resolved_baseline.gexf")
 
         resolved_one_shot_graph = resolve.resolve_graph(one_shot_graph, config["embedding"]["model"], config["embedding"]["similarity_threshold"])
         resolve.print_summary(one_shot_graph.number_of_nodes(), resolved_one_shot_graph.number_of_nodes())
-        nx.write_gexf(sanitize_for_gexf(resolved_one_shot_graph), GRAPH_PATH / f"{run_tag}_resolved_one_shot.gexf")
+        nx.write_gexf(extraction.sanitize_for_gexf(resolved_one_shot_graph), GRAPH_PATH / f"{run_tag}_resolved_one_shot.gexf")
 
         resolved_conversational_graph = resolve.resolve_graph(conversational_graph, config["embedding"]["model"], config["embedding"]["similarity_threshold"])
         resolve.print_summary(conversational_graph.number_of_nodes(), resolved_conversational_graph.number_of_nodes())
-        nx.write_gexf(sanitize_for_gexf(resolved_conversational_graph), GRAPH_PATH / f"{run_tag}_resolved_conversational.gexf")
+        nx.write_gexf(extraction.sanitize_for_gexf(resolved_conversational_graph), GRAPH_PATH / f"{run_tag}_resolved_conversational.gexf")
 
     log_path = LOG_PATH / f"{run_tag}_log.html"
     save_log(log_path)

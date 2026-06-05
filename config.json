@@ -2,20 +2,23 @@
     "seed": 742,
     "test_size": 0.3,
     "model": "mistral-small-2603",
-    "temperature": 0.2,
-    "conversation_samples": 10,
+    "temperature": 0.0,
+    "conversation_samples": 0.05,
     "turns": 5,
-    "eval_samples": 40,
     "baseline": {
         "model": "en_core_web_trf"
     },
     "embedding": {
         "model": "sentence-transformers/all-MiniLM-L6-v2",
-        "similarity_threshold": 0.95
+        "similarity_threshold": 0.9
+    },
+    "evaluation": {
+        "samples": 50,
+        "annotation_samples": 50
     },
     "dev": {
         "enabled": true,
-        "data": 0.01,
-        "extraction_data": 0.1
+        "data": 0.025,
+        "extraction_data": 1.0
     }
 }

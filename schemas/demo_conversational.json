@@ -1,37 +1,67 @@
 {
     "entities": [
-        "Organization",
         "Person",
+        "Organization",
         "Product",
+        "Order",
+        "Review",
+        "Email",
         "Event",
         "Location",
-        "Auction",
-        "Financial_Instrument"
+        "Device",
+        "Account",
+        "Date",
+        "Transaction",
+        "Quantity"
     ],
     "relationships": [
-        [
-            "promotes",
-            "An organization or person promoting a product or event"
-        ],
-        [
-            "located_at",
-            "A location where an event, organization, product, or auction is based"
-        ],
-        [
-            "participates_in",
-            "A person or organization taking part in an event or auction"
-        ],
-        [
-            "belongs_to_category",
-            "A product categorized under a specific type"
-        ],
-        [
-            "associated_with",
-            "A financial instrument associated with an auction"
-        ],
-        [
-            "hosts",
-            "An organization hosting an auction"
-        ]
+        {
+            "label": "purchased",
+            "description": "A person who bought a product or service"
+        },
+        {
+            "label": "shipped_to",
+            "description": "A product or order that is shipped to a person or location"
+        },
+        {
+            "label": "reviewed",
+            "description": "A person who reviewed a product or service"
+        },
+        {
+            "label": "works_at",
+            "description": "A person who is employed at an organization"
+        },
+        {
+            "label": "signed_in_from",
+            "description": "A person who signed in to an account from a device or location"
+        },
+        {
+            "label": "ordered_by",
+            "description": "An order that is placed by a person"
+        },
+        {
+            "label": "shipped_by",
+            "description": "An organization that ships a product or order"
+        },
+        {
+            "label": "hosted_at",
+            "description": "An event that is hosted at a location"
+        },
+        {
+            "label": "related_to",
+            "description": "A general relationship to connect entities that are mentioned together but don't fit other relationships"
+        },
+        {
+            "label": "occurred_on",
+            "description": "An event or action that occurred on a specific date"
+        },
+        {
+            "label": "involved_in",
+            "description": "A transaction that involves a person, organization, or account"
+        },
+        {
+            "label": "includes",
+            "description": "An order or review that includes a product"
+        }
     ]
 }

@@ -1,8 +1,8 @@
 from networkx import MultiDiGraph
 import networkx as nx
+from tqdm import tqdm
 from sentence_transformers import SentenceTransformer
 from rich.table import Table
-from tqdm import tqdm
 from utils import log_and_print
 
 def print_summary(initial_nodes_n, resolved_nodes_n):

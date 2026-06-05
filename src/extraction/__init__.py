@@ -1,3 +1,5 @@
+import json
+
 from pydantic import BaseModel, Field
 from tqdm import tqdm
 from utils import email as email_tools
@@ -31,8 +33,8 @@ def extract_graph(emails, agent, prompt):
                 graph.nodes[node_label].setdefault("ids", []).append(email["id"])
             else:    
                 graph.add_node(node_label, evidence=[evidence], ids=[email["id"]])
-        for edge in edges: #nodes are automaticcaly added when adding edges. maybe code can be simplified
-            graph.add_edge(edge[0], edge[1], label=edge[2], evidence=edge[3], ids=email["id"])
+        for source, target, label, evidence in edges: #nodes are automaticcaly added when adding edges. maybe code can be simplified
+            graph.add_edge(source, target, label=label, evidence=evidence, ids=email["id"])
     
     return graph
 

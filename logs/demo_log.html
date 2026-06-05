@@ -29,13 +29,13 @@ body {
     <span class="r3">&#x27;seed&#x27;</span>: <span class="r4">742</span>,
     <span class="r3">&#x27;test_size&#x27;</span>: <span class="r4">0.3</span>,
     <span class="r3">&#x27;model&#x27;</span>: <span class="r3">&#x27;mistral-small-2603&#x27;</span>,
-    <span class="r3">&#x27;temperature&#x27;</span>: <span class="r4">0.2</span>,
-    <span class="r3">&#x27;conversation_samples&#x27;</span>: <span class="r4">10</span>,
+    <span class="r3">&#x27;temperature&#x27;</span>: <span class="r4">0.0</span>,
+    <span class="r3">&#x27;conversation_samples&#x27;</span>: <span class="r4">0.05</span>,
     <span class="r3">&#x27;turns&#x27;</span>: <span class="r4">5</span>,
-    <span class="r3">&#x27;eval_samples&#x27;</span>: <span class="r4">40</span>,
     <span class="r3">&#x27;baseline&#x27;</span>: <span class="r2">{</span><span class="r3">&#x27;model&#x27;</span>: <span class="r3">&#x27;en_core_web_trf&#x27;</span><span class="r2">}</span>,
     <span class="r3">&#x27;embedding&#x27;</span>: <span class="r2">{</span><span class="r3">&#x27;model&#x27;</span>: <span class="r3">&#x27;sentence-transformers/all-MiniLM-L6-v2&#x27;</span>, <span class="r3">&#x27;similarity_threshold&#x27;</span>: <span class="r4">0.95</span><span class="r2">}</span>,
-    <span class="r3">&#x27;dev&#x27;</span>: <span class="r2">{</span><span class="r3">&#x27;enabled&#x27;</span>: <span class="r5">True</span>, <span class="r3">&#x27;data&#x27;</span>: <span class="r4">0.01</span>, <span class="r3">&#x27;extraction_data&#x27;</span>: <span class="r4">0.1</span><span class="r2">}</span>
+    <span class="r3">&#x27;evaluation&#x27;</span>: <span class="r2">{</span><span class="r3">&#x27;samples&#x27;</span>: <span class="r4">50</span>, <span class="r3">&#x27;annotation_samples&#x27;</span>: <span class="r4">10</span><span class="r2">}</span>,
+    <span class="r3">&#x27;dev&#x27;</span>: <span class="r2">{</span><span class="r3">&#x27;enabled&#x27;</span>: <span class="r5">True</span>, <span class="r3">&#x27;data&#x27;</span>: <span class="r4">0.025</span>, <span class="r3">&#x27;extraction_data&#x27;</span>: <span class="r4">1.0</span><span class="r2">}</span>
 <span class="r2">}</span>
 ╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ <span class="r1">INGESTING</span>                                                                                                            │
@@ -44,12 +44,12 @@ body {
 <span class="r7">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━┳━━━━━━━━━━━━┓</span>
 <span class="r7">┃</span><span class="r2"> Metric                       </span><span class="r7">┃</span><span class="r2">   Value </span><span class="r7">┃</span><span class="r2"> Percentage </span><span class="r7">┃</span>
 <span class="r7">┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━╇━━━━━━━━━━━━┩</span>
-<span class="r7">│</span><span class="r8"> Emails Successfully Ingested </span><span class="r7">│</span><span class="r3">     130 </span><span class="r7">│</span><span class="r9">     100.0% </span><span class="r7">│</span>
-<span class="r7">│</span><span class="r8"> Non-empty Bodies             </span><span class="r7">│</span><span class="r3">     129 </span><span class="r7">│</span><span class="r9">      99.2% </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Emails Successfully Ingested </span><span class="r7">│</span><span class="r3">     325 </span><span class="r7">│</span><span class="r9">     100.0% </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Non-empty Bodies             </span><span class="r7">│</span><span class="r3">     323 </span><span class="r7">│</span><span class="r9">      99.4% </span><span class="r7">│</span>
 <span class="r7">├──────────────────────────────┼─────────┼────────────┤</span>
 <span class="r7">│</span><span class="r8"> Min Body Length              </span><span class="r7">│</span><span class="r3">       0 </span><span class="r7">│</span><span class="r9">      chars </span><span class="r7">│</span>
-<span class="r7">│</span><span class="r8"> Max Body Length              </span><span class="r7">│</span><span class="r3"> 107,473 </span><span class="r7">│</span><span class="r9">      chars </span><span class="r7">│</span>
-<span class="r7">│</span><span class="r8"> Avg Body Length              </span><span class="r7">│</span><span class="r3"> 13865.0 </span><span class="r7">│</span><span class="r9">      chars </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Max Body Length              </span><span class="r7">│</span><span class="r3"> 111,160 </span><span class="r7">│</span><span class="r9">      chars </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Avg Body Length              </span><span class="r7">│</span><span class="r3"> 13231.8 </span><span class="r7">│</span><span class="r9">      chars </span><span class="r7">│</span>
 <span class="r7">└──────────────────────────────┴─────────┴────────────┘</span>
 ╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ <span class="r1">SPLITTING</span>                                                                                                            │
@@ -59,9 +59,149 @@ Splitting the data<span class="r9">...</span>
 <span class="r7">┏━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━┓</span>
 <span class="r7">┃</span><span class="r2"> Info           </span><span class="r7">┃</span><span class="r2"> Value </span><span class="r7">┃</span><span class="r2"> Percentage </span><span class="r7">┃</span>
 <span class="r7">┡━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━┩</span>
-<span class="r7">│</span><span class="r8"> Validation set </span><span class="r7">│</span><span class="r3">    91 </span><span class="r7">│</span><span class="r9">      70.0% </span><span class="r7">│</span>
-<span class="r7">│</span><span class="r8"> Testing set    </span><span class="r7">│</span><span class="r3">    39 </span><span class="r7">│</span><span class="r9">      30.0% </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Validation set </span><span class="r7">│</span><span class="r3">   228 </span><span class="r7">│</span><span class="r9">      70.2% </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Testing set    </span><span class="r7">│</span><span class="r3">    97 </span><span class="r7">│</span><span class="r9">      29.8% </span><span class="r7">│</span>
 <span class="r7">└────────────────┴───────┴────────────┘</span>
+╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ <span class="r1">DISCOVERY</span>                                                                                                            │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+<span class="r6">                                                         Schema                                                         </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Field            </span><span class="r7">┃</span><span class="r2"> Value                                                                                             </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Entities         </span><span class="r7">│</span><span class="r3"> Person, Organization, Product, Order, Review, Email, Event, Location, Device, Account             </span><span class="r7">│</span>
+<span class="r7">├──────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────┤</span>
+<span class="r7">│</span><span class="r8"> Relationships    </span><span class="r7">│</span><span class="r3">                                                                                                   </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - purchased      </span><span class="r7">│</span><span class="r3"> A person who bought a product or service                                                          </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_to     </span><span class="r7">│</span><span class="r3"> A product or order that is shipped to a person or location                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - reviewed       </span><span class="r7">│</span><span class="r3"> A person who reviewed a product or service                                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - works_at       </span><span class="r7">│</span><span class="r3"> A person who is employed at an organization                                                       </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - signed_in_from </span><span class="r7">│</span><span class="r3"> A person who signed in to an account from a device or location                                    </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - ordered_by     </span><span class="r7">│</span><span class="r3"> An order that is placed by a person                                                               </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_by     </span><span class="r7">│</span><span class="r3"> An organization that ships a product or order                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - hosted_at      </span><span class="r7">│</span><span class="r3"> An event that is hosted at a location                                                             </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - related_to     </span><span class="r7">│</span><span class="r3"> A general relationship to connect entities that are mentioned together but don&#x27;t fit other        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8">                  </span><span class="r7">│</span><span class="r3"> relationships                                                                                     </span><span class="r7">│</span>
+<span class="r7">└──────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┘</span>
+<span class="r4">Agent</span> &gt;&gt;&gt; Should we include <span class="r3">&#x27;Location&#x27;</span> as an entity to capture addresses, cities, or regions mentioned in emails <span class="r2">(</span>e.g., 
+<span class="r3">&#x27;358 EL BRILLO WAY&#x27;</span>, <span class="r3">&#x27;little st. james&#x27;</span>, <span class="r3">&#x27;New Mexico, USA&#x27;</span><span class="r2">)</span>?
+<span class="r4">User</span> &gt;&gt;&gt; yes
+<span class="r6">                                                         Schema                                                         </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Field            </span><span class="r7">┃</span><span class="r2"> Value                                                                                             </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Entities         </span><span class="r7">│</span><span class="r3"> Person, Organization, Product, Order, Review, Email, Event, Location, Device, Account, Date       </span><span class="r7">│</span>
+<span class="r7">├──────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────┤</span>
+<span class="r7">│</span><span class="r8"> Relationships    </span><span class="r7">│</span><span class="r3">                                                                                                   </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - purchased      </span><span class="r7">│</span><span class="r3"> A person who bought a product or service                                                          </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_to     </span><span class="r7">│</span><span class="r3"> A product or order that is shipped to a person or location                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - reviewed       </span><span class="r7">│</span><span class="r3"> A person who reviewed a product or service                                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - works_at       </span><span class="r7">│</span><span class="r3"> A person who is employed at an organization                                                       </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - signed_in_from </span><span class="r7">│</span><span class="r3"> A person who signed in to an account from a device or location                                    </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - ordered_by     </span><span class="r7">│</span><span class="r3"> An order that is placed by a person                                                               </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_by     </span><span class="r7">│</span><span class="r3"> An organization that ships a product or order                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - hosted_at      </span><span class="r7">│</span><span class="r3"> An event that is hosted at a location                                                             </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - related_to     </span><span class="r7">│</span><span class="r3"> A general relationship to connect entities that are mentioned together but don&#x27;t fit other        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8">                  </span><span class="r7">│</span><span class="r3"> relationships                                                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - occurred_on    </span><span class="r7">│</span><span class="r3"> An event or action that occurred on a specific date or time                                       </span><span class="r7">│</span>
+<span class="r7">└──────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┘</span>
+<span class="r4">Agent</span> &gt;&gt;&gt; Should we include <span class="r3">&#x27;Date&#x27;</span> as an entity to capture specific dates, times, or date ranges mentioned in emails 
+<span class="r2">(</span>e.g., <span class="r3">&#x27;Thursday, October 18 - Tuesday, October 30&#x27;</span>, <span class="r3">&#x27;Friday, January 2, 2015&#x27;</span>, <span class="r3">&#x27;Thursday, August 10, 2017 1:42 PM </span>
+<span class="r3">(MT)&#x27;</span><span class="r2">)</span>?
+<span class="r4">User</span> &gt;&gt;&gt; no, i&#x27;m not interested in times
+<span class="r6">                                                         Schema                                                         </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Field            </span><span class="r7">┃</span><span class="r2"> Value                                                                                             </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Entities         </span><span class="r7">│</span><span class="r3"> Person, Organization, Product, Order, Review, Email, Event, Location, Device, Account, Date       </span><span class="r7">│</span>
+<span class="r7">├──────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────┤</span>
+<span class="r7">│</span><span class="r8"> Relationships    </span><span class="r7">│</span><span class="r3">                                                                                                   </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - purchased      </span><span class="r7">│</span><span class="r3"> A person who bought a product or service                                                          </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_to     </span><span class="r7">│</span><span class="r3"> A product or order that is shipped to a person or location                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - reviewed       </span><span class="r7">│</span><span class="r3"> A person who reviewed a product or service                                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - works_at       </span><span class="r7">│</span><span class="r3"> A person who is employed at an organization                                                       </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - signed_in_from </span><span class="r7">│</span><span class="r3"> A person who signed in to an account from a device or location                                    </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - ordered_by     </span><span class="r7">│</span><span class="r3"> An order that is placed by a person                                                               </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_by     </span><span class="r7">│</span><span class="r3"> An organization that ships a product or order                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - hosted_at      </span><span class="r7">│</span><span class="r3"> An event that is hosted at a location                                                             </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - related_to     </span><span class="r7">│</span><span class="r3"> A general relationship to connect entities that are mentioned together but don&#x27;t fit other        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8">                  </span><span class="r7">│</span><span class="r3"> relationships                                                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - occurred_on    </span><span class="r7">│</span><span class="r3"> An event or action that occurred on a specific date                                               </span><span class="r7">│</span>
+<span class="r7">└──────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┘</span>
+<span class="r4">Agent</span> &gt;&gt;&gt; Should we include <span class="r3">&#x27;Monetary_Amount&#x27;</span> as an entity to capture specific financial values mentioned in emails 
+<span class="r2">(</span>e.g., <span class="r3">&#x27;$14.84&#x27;</span>, <span class="r3">&#x27;$829.23&#x27;</span>, <span class="r3">&#x27;$106.90&#x27;</span><span class="r2">)</span>?
+<span class="r4">User</span> &gt;&gt;&gt; just include transaction if some money is moved. otherwise ignore
+<span class="r6">                                                         Schema                                                         </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Field            </span><span class="r7">┃</span><span class="r2"> Value                                                                                             </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Entities         </span><span class="r7">│</span><span class="r3"> Person, Organization, Product, Order, Review, Email, Event, Location, Device, Account, Date,      </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8">                  </span><span class="r7">│</span><span class="r3"> Transaction                                                                                       </span><span class="r7">│</span>
+<span class="r7">├──────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────┤</span>
+<span class="r7">│</span><span class="r8"> Relationships    </span><span class="r7">│</span><span class="r3">                                                                                                   </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - purchased      </span><span class="r7">│</span><span class="r3"> A person who bought a product or service                                                          </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_to     </span><span class="r7">│</span><span class="r3"> A product or order that is shipped to a person or location                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - reviewed       </span><span class="r7">│</span><span class="r3"> A person who reviewed a product or service                                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - works_at       </span><span class="r7">│</span><span class="r3"> A person who is employed at an organization                                                       </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - signed_in_from </span><span class="r7">│</span><span class="r3"> A person who signed in to an account from a device or location                                    </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - ordered_by     </span><span class="r7">│</span><span class="r3"> An order that is placed by a person                                                               </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_by     </span><span class="r7">│</span><span class="r3"> An organization that ships a product or order                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - hosted_at      </span><span class="r7">│</span><span class="r3"> An event that is hosted at a location                                                             </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - related_to     </span><span class="r7">│</span><span class="r3"> A general relationship to connect entities that are mentioned together but don&#x27;t fit other        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8">                  </span><span class="r7">│</span><span class="r3"> relationships                                                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - occurred_on    </span><span class="r7">│</span><span class="r3"> An event or action that occurred on a specific date                                               </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - involved_in    </span><span class="r7">│</span><span class="r3"> A transaction that involves a person, organization, or account                                    </span><span class="r7">│</span>
+<span class="r7">└──────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┘</span>
+<span class="r4">Agent</span> &gt;&gt;&gt; Should we include <span class="r3">&#x27;Transaction&#x27;</span> as an entity to capture financial transactions <span class="r2">(</span>e.g., payments, refunds, or 
+transfers<span class="r2">)</span> mentioned in emails?
+<span class="r4">User</span> &gt;&gt;&gt; yes
+<span class="r6">                                                         Schema                                                         </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Field            </span><span class="r7">┃</span><span class="r2"> Value                                                                                             </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Entities         </span><span class="r7">│</span><span class="r3"> Person, Organization, Product, Order, Review, Email, Event, Location, Device, Account, Date,      </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8">                  </span><span class="r7">│</span><span class="r3"> Transaction, Quantity                                                                             </span><span class="r7">│</span>
+<span class="r7">├──────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────┤</span>
+<span class="r7">│</span><span class="r8"> Relationships    </span><span class="r7">│</span><span class="r3">                                                                                                   </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - purchased      </span><span class="r7">│</span><span class="r3"> A person who bought a product or service                                                          </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_to     </span><span class="r7">│</span><span class="r3"> A product or order that is shipped to a person or location                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - reviewed       </span><span class="r7">│</span><span class="r3"> A person who reviewed a product or service                                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - works_at       </span><span class="r7">│</span><span class="r3"> A person who is employed at an organization                                                       </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - signed_in_from </span><span class="r7">│</span><span class="r3"> A person who signed in to an account from a device or location                                    </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - ordered_by     </span><span class="r7">│</span><span class="r3"> An order that is placed by a person                                                               </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_by     </span><span class="r7">│</span><span class="r3"> An organization that ships a product or order                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - hosted_at      </span><span class="r7">│</span><span class="r3"> An event that is hosted at a location                                                             </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - related_to     </span><span class="r7">│</span><span class="r3"> A general relationship to connect entities that are mentioned together but don&#x27;t fit other        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8">                  </span><span class="r7">│</span><span class="r3"> relationships                                                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - occurred_on    </span><span class="r7">│</span><span class="r3"> An event or action that occurred on a specific date                                               </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - involved_in    </span><span class="r7">│</span><span class="r3"> A transaction that involves a person, organization, or account                                    </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - includes       </span><span class="r7">│</span><span class="r3"> An order or review that includes a product or quantity                                            </span><span class="r7">│</span>
+<span class="r7">└──────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┘</span>
+<span class="r4">Agent</span> &gt;&gt;&gt; Should we include <span class="r3">&#x27;Quantity&#x27;</span> as an entity to capture the number of items in orders or reviews <span class="r2">(</span>e.g., <span class="r3">&#x27;2x </span>
+<span class="r3">&quot;Canon 10x30 IS...&quot;&#x27;</span>, <span class="r3">&#x27;2 &quot;Canon 10x30 IS...&quot;&#x27;</span><span class="r2">)</span>?
+<span class="r4">User</span> &gt;&gt;&gt; no
+<span class="r6">                                                         Schema                                                         </span>
+<span class="r7">┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓</span>
+<span class="r7">┃</span><span class="r2"> Field            </span><span class="r7">┃</span><span class="r2"> Value                                                                                             </span><span class="r7">┃</span>
+<span class="r7">┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩</span>
+<span class="r7">│</span><span class="r8"> Entities         </span><span class="r7">│</span><span class="r3"> Person, Organization, Product, Order, Review, Email, Event, Location, Device, Account, Date,      </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8">                  </span><span class="r7">│</span><span class="r3"> Transaction, Quantity                                                                             </span><span class="r7">│</span>
+<span class="r7">├──────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────┤</span>
+<span class="r7">│</span><span class="r8"> Relationships    </span><span class="r7">│</span><span class="r3">                                                                                                   </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - purchased      </span><span class="r7">│</span><span class="r3"> A person who bought a product or service                                                          </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_to     </span><span class="r7">│</span><span class="r3"> A product or order that is shipped to a person or location                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - reviewed       </span><span class="r7">│</span><span class="r3"> A person who reviewed a product or service                                                        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - works_at       </span><span class="r7">│</span><span class="r3"> A person who is employed at an organization                                                       </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - signed_in_from </span><span class="r7">│</span><span class="r3"> A person who signed in to an account from a device or location                                    </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - ordered_by     </span><span class="r7">│</span><span class="r3"> An order that is placed by a person                                                               </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - shipped_by     </span><span class="r7">│</span><span class="r3"> An organization that ships a product or order                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - hosted_at      </span><span class="r7">│</span><span class="r3"> An event that is hosted at a location                                                             </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - related_to     </span><span class="r7">│</span><span class="r3"> A general relationship to connect entities that are mentioned together but don&#x27;t fit other        </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8">                  </span><span class="r7">│</span><span class="r3"> relationships                                                                                     </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - occurred_on    </span><span class="r7">│</span><span class="r3"> An event or action that occurred on a specific date                                               </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - involved_in    </span><span class="r7">│</span><span class="r3"> A transaction that involves a person, organization, or account                                    </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> - includes       </span><span class="r7">│</span><span class="r3"> An order or review that includes a product                                                        </span><span class="r7">│</span>
+<span class="r7">└──────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────┘</span>
 ╭──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
 │ <span class="r1">EXTRACTION</span>                                                                                                           │
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -81,15 +221,15 @@ Splitting the data<span class="r9">...</span>
 <span class="r7">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━┓</span>
 <span class="r7">┃</span><span class="r2"> Metric                        </span><span class="r7">┃</span><span class="r2"> Value </span><span class="r7">┃</span><span class="r2"> Reduced </span><span class="r7">┃</span>
 <span class="r7">┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━┩</span>
-<span class="r7">│</span><span class="r8"> Initial Nodes Number          </span><span class="r7">│</span><span class="r3">    77 </span><span class="r7">│</span><span class="r9">         </span><span class="r7">│</span>
-<span class="r7">│</span><span class="r8"> After Resolution Nodes Number </span><span class="r7">│</span><span class="r3">    77 </span><span class="r7">│</span><span class="r9">    0.0% </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Initial Nodes Number          </span><span class="r7">│</span><span class="r3">   760 </span><span class="r7">│</span><span class="r9">         </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> After Resolution Nodes Number </span><span class="r7">│</span><span class="r3">   760 </span><span class="r7">│</span><span class="r9">    0.0% </span><span class="r7">│</span>
 <span class="r7">└───────────────────────────────┴───────┴─────────┘</span>
 <span class="r6">                Resolution Metrics                 </span>
 <span class="r7">┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━┳━━━━━━━━━┓</span>
 <span class="r7">┃</span><span class="r2"> Metric                        </span><span class="r7">┃</span><span class="r2"> Value </span><span class="r7">┃</span><span class="r2"> Reduced </span><span class="r7">┃</span>
 <span class="r7">┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━╇━━━━━━━━━┩</span>
-<span class="r7">│</span><span class="r8"> Initial Nodes Number          </span><span class="r7">│</span><span class="r3">    79 </span><span class="r7">│</span><span class="r9">         </span><span class="r7">│</span>
-<span class="r7">│</span><span class="r8"> After Resolution Nodes Number </span><span class="r7">│</span><span class="r3">    79 </span><span class="r7">│</span><span class="r9">    0.0% </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> Initial Nodes Number          </span><span class="r7">│</span><span class="r3">   773 </span><span class="r7">│</span><span class="r9">         </span><span class="r7">│</span>
+<span class="r7">│</span><span class="r8"> After Resolution Nodes Number </span><span class="r7">│</span><span class="r3">   773 </span><span class="r7">│</span><span class="r9">    0.0% </span><span class="r7">│</span>
 <span class="r7">└───────────────────────────────┴───────┴─────────┘</span>
 </code></pre>
 </body>

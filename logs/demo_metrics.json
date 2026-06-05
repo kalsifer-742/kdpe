@@ -1,0 +1,53 @@
+{
+  "tag": "demo",
+  "precision": {
+    "baseline_unseen": {
+      "mean": 0.54,
+      "ci_low": 0.42,
+      "ci_high": 0.66,
+      "n": 50
+    },
+    "one_shot_seen": {
+      "mean": 1.0,
+      "ci_low": 1.0,
+      "ci_high": 1.0,
+      "n": 50
+    },
+    "one_shot_unseen": {
+      "mean": 0.9,
+      "ci_low": 0.8,
+      "ci_high": 0.98,
+      "n": 50
+    },
+    "conversational_seen": {
+      "mean": 0.88,
+      "ci_low": 0.78,
+      "ci_high": 0.96,
+      "n": 50
+    },
+    "conversational_unseen": {
+      "mean": 0.84,
+      "ci_low": 0.74,
+      "ci_high": 0.94,
+      "n": 50
+    }
+  },
+  "coverage": [
+    {
+      "condition": "one_shot",
+      "schema_relation_count": 9,
+      "found_relation_count": 8,
+      "new_relation_types": [],
+      "n_new_relation_types": 0,
+      "schema_coverage_ratio": 1.0
+    },
+    {
+      "condition": "conversational",
+      "schema_relation_count": 12,
+      "found_relation_count": 8,
+      "new_relation_types": [],
+      "n_new_relation_types": 0,
+      "schema_coverage_ratio": 1.0
+    }
+  ]
+}

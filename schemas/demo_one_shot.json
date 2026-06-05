@@ -1,43 +1,52 @@
 {
     "entities": [
-        "Organization",
         "Person",
+        "Organization",
         "Product",
+        "Order",
+        "Review",
+        "Email",
         "Event",
         "Location",
-        "Promotion",
-        "Survey",
-        "Auction",
-        "Financial_Instrument"
+        "Device",
+        "Account"
     ],
     "relationships": [
-        [
-            "sent_by",
-            "An email sent by an organization or person"
-        ],
-        [
-            "received_by",
-            "An email received by a person or organization"
-        ],
-        [
-            "promotes",
-            "An organization or person promoting a product, event, or promotion"
-        ],
-        [
-            "located_at",
-            "A location where an event, organization, or product is based"
-        ],
-        [
-            "participates_in",
-            "A person or organization taking part in an event or promotion"
-        ],
-        [
-            "belongs_to_category",
-            "A product or promotion categorized under a specific type"
-        ],
-        [
-            "associated_with",
-            "A financial instrument associated with a promotion or event"
-        ]
+        {
+            "label": "purchased",
+            "description": "A person who bought a product or service"
+        },
+        {
+            "label": "shipped_to",
+            "description": "A product or order that is shipped to a person or location"
+        },
+        {
+            "label": "reviewed",
+            "description": "A person who reviewed a product or service"
+        },
+        {
+            "label": "works_at",
+            "description": "A person who is employed at an organization"
+        },
+        {
+            "label": "signed_in_from",
+            "description": "A person who signed in to an account from a device or location"
+        },
+        {
+            "label": "ordered_by",
+            "description": "An order that is placed by a person"
+        },
+        {
+            "label": "shipped_by",
+            "description": "An organization that ships a product or order"
+        },
+        {
+            "label": "hosted_at",
+            "description": "An event that is hosted at a location"
+        },
+        {
+            "label": "related_to",
+            "description": "A general relationship to connect entities that are mentioned together but don't fit other relationships"
+        }
     ]
 }

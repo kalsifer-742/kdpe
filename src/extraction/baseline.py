@@ -50,9 +50,9 @@ def extract_graph(nlp, emails: list[dict]) -> nx.MultiDiGraph:
                 verb = get_verb(e1, e2)
                 
                 if verb:
-                    graph.add_node(e1.text, evidence=e1.text)
-                    graph.add_node(e2.text, evidence=e2.text)
+                    graph.add_node(e1.text, evidence=e1.text, ids=email["id"])
+                    graph.add_node(e2.text, evidence=e2.text, ids=email["id"])
                     
-                    graph.add_edge(e1.text, e2.text, label=verb)
+                    graph.add_edge(e1.text, e2.text, label=verb, evidence=verb, ids=email["id"])
     
     return graph

@@ -1,3 +1,4 @@
+import hashlib
 import subprocess
 import zipfile
 import shutil
@@ -17,7 +18,8 @@ def extract_zip(zip_path: Path, extract_to: Path):
 
     files_paths = list((zip_path.parent / "jeeproject@yahoo.com tranche 1").iterdir())
     for file_path in files_paths:
-        shutil.copyfile(file_path, extract_to / file_path.name)
+        id = hashlib.md5(file_path.as_posix().encode()).hexdigest()[:12]
+        shutil.copyfile(file_path, extract_to / f"{id}_{file_path.name}")
 
 def cleanup(target_dir: Path):
     shutil.rmtree(target_dir)

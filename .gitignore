@@ -4,7 +4,8 @@ data/sets/*
 schemas/*
 graphs/*
 logs/*
-**/__pycache__/**
+labels/*
+**/__pycache__/
 .env
 .venv
 

@@ -1,10 +1,10 @@
 from mistralai.client import Mistral
 
 class Agent:
-    def __init__(self, api_key, model, temperature, format):
+    def __init__(self, api_key, model, temperature: float, format):
         self.client = Mistral(api_key)
         self.model = model
-        self.temperature = temperature,
+        self.temperature = temperature
         self.format = format
         self.history = []
 
@@ -22,7 +22,7 @@ class Agent:
             model = self.model,
             messages = self.history,
             response_format = self.format,
-            temperature=0
+            temperature = self.temperature
         )
 
         self.history.append({"role": "assistant", "content": response.choices[0].message.content})
@@ -35,7 +35,7 @@ class Agent:
             model = self.model,
             messages = messages,
             response_format = self.format,
-            temperature=0
+            temperature = self.temperature
         )
 
         parsed_response = response.choices[0].message.parsed

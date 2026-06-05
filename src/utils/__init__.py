@@ -6,6 +6,7 @@ import networkx as nx
 
 from rich.console import Console
 
+
 debug = Console()
 console = Console()
 log_buffer = io.StringIO()

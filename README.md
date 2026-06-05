@@ -2,6 +2,8 @@
 
 Conversational Graph Extraction From Unstructured Data
 
+Project for the course [Knowledge Discovery And Pattern Extraction](https://reliableai.github.io/) at UniTn
+
 ## Setup
 
 ### Requirements
