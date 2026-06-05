@@ -35,5 +35,5 @@ Bootstrap resampling applied to 50 samples per condition.
 
 ### Generalization & Coverage
 - **Generalization Gap**: The one-shot approach degraded by 10% on unseen data (1.00 -> 0.90), while the conversational approach only degraded by 4% (0.88 -> 0.84), showing higher stability and less overfitting.
-- **Schema Coverage**: Both LLM approaches achieved a 1.0 schema coverage ratio, successfully utilizing 8 distinct relation types. Although it has to be said that this result depends heavily on the conversation and the person doing the manual labeling.
+- **Schema Coverage**: Both LLM approaches achieved a 1.0 schema coverage ratio, successfully utilizing distinct relation types. Although it has to be said that this result depends heavily on the conversation and the person doing the manual labeling.
 - **Entity Resolution**: The pipeline achieved a 0% reduction during resolution (760 initial nodes -> 760 final nodes). It has to be noted that the LLM does really grate entity resolution by itself.
