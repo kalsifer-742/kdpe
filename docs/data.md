@@ -26,9 +26,9 @@ Epstein Files 2026-02-11
 
 ## Limitations
 
-Data quality after extracting it from PDF with dedicated software or OCR has to be evaluated.
+Data quality is not an issue as emails are in a machine readable format: `.eml`
 
-Lots of data is redacted, this limits the tools capabilities.
+If lots of data is redacted, it could limit the tool capabilities.
 
 ## Ethics
 

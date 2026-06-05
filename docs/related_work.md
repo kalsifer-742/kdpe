@@ -1,9 +1,9 @@
 # Related Work
 
 ## Changelog
-### v2 - 28/05/2026
+### v3 - 05/06/2026
 #### Changes
-refined tools choice
+fixed chosen LLM
 #### Comment
 
 ## Papers
@@ -55,7 +55,7 @@ Enterprise Knowledge Graphs
 
 ### LLM
 
-local installation of [gemma4:e4b](https://deepmind.google/models/gemma/gemma-4/) run by [ollama](https://ollama.com/)
+[Mistral Small 4](https://mistral.ai/news/mistral-small-4/) Released under the Apache 2.0 license. Accessed through Mistral official APIs.
 
 #### Natural Language Processing
 
