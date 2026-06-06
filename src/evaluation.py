@@ -1,3 +1,5 @@
+# DISCLAIMER: AI Generated
+
 """
 evaluation.py — standalone evaluation script for kdpe
 

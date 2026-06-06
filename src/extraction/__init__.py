@@ -43,10 +43,9 @@ def extract_graph_nx(graph_data: GraphData):
     edges = [(edge["source"], edge["target"], edge["label"], edge["evidence"]) for edge in graph_data["edges"]]
     return (nodes, edges)
 
+# DISCLAIMER: AI Generated
 def sanitize_for_gexf(G: nx.Graph) -> nx.Graph:
     """
-    DISCLAIMER: AI GENERATED
-
     Return a copy of G with node/edge attributes serialized to GEXF-friendly values.
 
     Lists, tuples and dicts are JSON-serialized so the NetworkX GEXF writer
